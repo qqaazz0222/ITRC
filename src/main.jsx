@@ -11,11 +11,12 @@ import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
 import "./custom.css";
+import Landing from "./pages/landing/page";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <HomePage />,
+        element: <Landing />,
     },
     {
         element: <DetailLayout />,

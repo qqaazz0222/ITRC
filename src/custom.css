@@ -27,3 +27,11 @@
         width: calc(100% - 2rem);
     }
 }
+
+img {
+    pointer-events: none;
+}
+
+.page {
+    z-index: 0;
+}
