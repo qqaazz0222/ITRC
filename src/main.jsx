@@ -12,6 +12,7 @@ import ErrorPage from "./pages/error/page";
 import "./index.css";
 import "./custom.css";
 import Landing from "./pages/landing/page";
+import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
     {
@@ -34,5 +35,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <RouterProvider router={router} />
+    <AnimatePresence>
+        <RouterProvider router={router} />
+    </AnimatePresence>
 );

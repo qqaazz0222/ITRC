@@ -237,30 +237,35 @@
 }
 
 .section2 .article .contentWrap .content:nth-child(1) {
+    display: none;
     transform: translate(-500%, 0) scale(3);
     /* animation: contentSlideIn1 2.75s forwards; */
     animation-delay: 0.25s;
     z-index: 1;
 }
 .section2 .article .contentWrap .content:nth-child(2) {
+    display: none;
     transform: translate(-500%, -500%) scale(4);
     /* animation: contentSlideIn2 3s forwards; */
     animation-delay: 0;
     z-index: 2;
 }
 .section2 .article .contentWrap .content:nth-child(3) {
+    display: none;
     transform: translate(0%, -500%) scale(5);
     /* animation: contentSlideIn3 3s forwards; */
     animation-delay: 0;
     z-index: 3;
 }
 .section2 .article .contentWrap .content:nth-child(4) {
+    display: none;
     transform: translate(500%, -500%) scale(5);
     /* animation: contentSlideIn4 2.5s forwards; */
     animation-delay: 0.5s;
     z-index: 2;
 }
 .section2 .article .contentWrap .content:nth-child(5) {
+    display: none;
     transform: translate(500%, 0) scale(3);
     /* animation: contentSlideIn5 2.9s forwards; */
     animation-delay: 0.1s;

@@ -1,15 +1,18 @@
 // 라이브러리
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 // 서비스
 // 컴포넌트
 // 아이콘
 // 이미지
-import ImgAi1 from "@/assets/images/ai1.png";
-import Grid from "@/assets/images/test.jpg";
 // 스타일
 import "./style.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import PageOut from "@/components/pageTransition/pageOut";
 const Landing = () => {
+    const navigate = useNavigate();
+    const [isOut, setIsOut] = useState(false);
+    const [s2ref, s2InView] = useInView();
     const section1BgHandler = () => {
         const target = document.querySelector("#landingPage .section.section1");
         window.addEventListener("scroll", function () {
@@ -20,22 +23,29 @@ const Landing = () => {
     const section2Handler = () => {
         const contents = document.querySelectorAll(".section2 .content");
         console.log(contents);
+        contents[0].style.display = "flex";
+        contents[1].style.display = "flex";
+        contents[2].style.display = "flex";
+        contents[3].style.display = "flex";
+        contents[4].style.display = "flex";
         contents[0].style.animation = "contentSlideIn1 2.75s forwards";
         contents[1].style.animation = "contentSlideIn2 3s forwards";
         contents[2].style.animation = "contentSlideIn3 3s forwards";
         contents[3].style.animation = "contentSlideIn4 2.5s forwards";
         contents[4].style.animation = "contentSlideIn5 2.9s forwards";
     };
-    const [s2ref, s2InView] = useInView();
+    const navigateHandler = (setState = () => {}, url = "") => {
+        setState(true);
+        setTimeout(() => {
+            navigate(url);
+        }, 1000);
+    };
     useEffect(() => {
         section1BgHandler();
     }, []);
     useEffect(() => {
         if (s2InView) {
-            console.log("View!!");
             section2Handler();
-        } else {
-            console.log("Hide!!");
         }
     }, [s2InView]);
     return (
@@ -83,7 +93,16 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="section section3">1</div>
+            <div className="section section3">
+                <button
+                    onClick={() => {
+                        navigateHandler(setIsOut, "/detail");
+                    }}
+                >
+                    테스트
+                </button>
+            </div>
+            {isOut && <PageOut />}
         </div>
     );
 };
