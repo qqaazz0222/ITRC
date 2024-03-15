@@ -27,7 +27,11 @@
         --radius: 0.95rem;
         --dgu-red: #ea5515;
         --dgu-orange: #f29301;
+        --dgu-orange-50: #f2920188;
         --dgu-yellow: #fbc401;
+        --dgu-yellow-25: #fbc50144;
+        --dgu-yellow-50: #fbc40188;
+        --dgu-yellow-75: #fbc401cc;
         --dgu-brown: #897c75;
         --gray-0: #ffffff;
         --gray-50: #f8fafc;
