@@ -5,6 +5,8 @@
     width: 100svw;
     min-height: 100svh;
     overflow: hidden;
+    transition: background 1s;
+    scroll-snap-type: y mandatory;
 }
 
 #landingPage .section {
@@ -13,13 +15,12 @@
     align-items: center;
     width: 100%;
     min-height: 100svh;
+    scroll-snap-align: start;
 }
 
 #landingPage .section.section1 {
     align-items: center;
     justify-content: center;
-    background: white;
-    /* background-image: radial-gradient(#e1e1e1 2px, transparent 0); */
     background-image: url("@/assets/images/bg-main-article.png");
     background-repeat: no-repeat;
     background-size: 150% 110%;
@@ -39,14 +40,17 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 500;
 }
 
 .section1 {
+    position: relative;
     opacity: 0;
     animation: section1Bg 1.5s forwards;
 }
 
 .section1 .mainTypo {
+    margin-bottom: 2rem;
     font-size: 10rem;
     font-weight: 700;
     text-align: center;
@@ -117,11 +121,71 @@
     animation: glow 3s infinite;
 }
 
+.section1 .object {
+    position: absolute;
+    animation: hovering 1s 1s infinite ease-in-out;
+}
+
+.section1 .object.obj1 {
+    width: 10rem;
+    top: 50%;
+    left: 40%;
+    z-index: 499;
+    animation-delay: 0.8s;
+    opacity: 0.4;
+}
+.section1 .object.obj2 {
+    width: 20rem;
+    top: 20%;
+    left: 80%;
+    z-index: 501;
+    animation-delay: 0.1s;
+    opacity: 0.9;
+}
+.section1 .object.obj3 {
+    width: 30rem;
+    top: 70%;
+    left: -5%;
+    z-index: 501;
+    animation-delay: 0.75s;
+}
+.section1 .object.obj4 {
+    width: 15rem;
+    top: 30%;
+    left: 50%;
+    z-index: 499;
+    animation-delay: 0.4s;
+    opacity: 0.6;
+}
+.section1 .object.obj5 {
+    width: 30rem;
+    top: -20%;
+    left: 25%;
+    z-index: 499;
+    animation-delay: 0.1s;
+}
+.section1 .object.obj6 {
+    width: 20rem;
+    top: 25%;
+    left: 10%;
+    z-index: 501;
+    animation-delay: 0.5s;
+    opacity: 0.85;
+}
+.section1 .object.obj7 {
+    width: 26rem;
+    top: 60%;
+    left: 60%;
+    z-index: 499;
+    animation-delay: 0.7s;
+}
+
 #landingPage .section.section2 {
+    height: 150svh;
     align-items: center;
     justify-content: center;
-    background: white;
-    background-image: radial-gradient(var(--gray-300) 1px, transparent 0);
+    background-image: radial-gradient(var(--dgu-yellow) 2px, transparent 0),
+        radial-gradient(var(--dgu-orange) 1px, transparent 0);
     background-size: 3rem 3rem;
 }
 
@@ -137,6 +201,9 @@
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: typoPopUp 1s forwards;
 }
 
 .section2 .article .sectionDesc {
@@ -144,25 +211,35 @@
     font-weight: 400;
     color: var(--gray-500);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    opacity: 0;
+    animation: typoFadeIn 1s 0.5s forwards;
 }
 
-.section2 .article .contentWrap {
+.section2 .article .contentContainer {
     display: flex;
     flex-direction: row;
-    gap: 0.75rem;
+    position: relative;
     padding: 0 8rem;
     width: 100svw;
 }
 
-.section2 .article .contentWrap::-webkit-scrollbar {
+.section2 .article .contentContainer::-webkit-scrollbar {
     display: none;
 }
 
-.section2 .article .contentWrap .content {
+.section2 .article .contentContainer .contentSlideWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    transition: translate 1s;
+}
+
+.section2 .article .contentContainer .content {
     display: flex;
     flex-direction: column;
-    height: 20rem;
+    /* height: 20rem; */
+    width: 16.75svw;
     aspect-ratio: 5/6;
     background: var(--gray-50);
     border-radius: 0.5rem;
@@ -173,38 +250,38 @@
     animation-delay: 3s;
 }
 
-.section2 .article .contentWrap .content:nth-child(1) {
+.section2 .article .contentContainer .content:nth-child(1) {
     transform: translate(-500%, 0) scale(3);
     animation: contentSlideIn1 2.75s forwards;
     animation-delay: 0.25s;
     z-index: 1;
 }
-.section2 .article .contentWrap .content:nth-child(2) {
+.section2 .article .contentContainer .content:nth-child(2) {
     transform: translate(-500%, -500%) scale(4);
     animation: contentSlideIn2 3s forwards;
     animation-delay: 0;
     z-index: 2;
 }
-.section2 .article .contentWrap .content:nth-child(3) {
+.section2 .article .contentContainer .content:nth-child(3) {
     transform: translate(0%, -500%) scale(5);
     animation: contentSlideIn3 3s forwards;
     animation-delay: 0;
     z-index: 3;
 }
-.section2 .article .contentWrap .content:nth-child(4) {
+.section2 .article .contentContainer .content:nth-child(4) {
     transform: translate(500%, -500%) scale(5);
     animation: contentSlideIn4 2.5s forwards;
     animation-delay: 0.5s;
     z-index: 2;
 }
-.section2 .article .contentWrap .content:nth-child(5) {
+.section2 .article .contentContainer .content:nth-child(5) {
     transform: translate(500%, 0) scale(3);
     animation: contentSlideIn5 2.9s forwards;
     animation-delay: 0.1s;
     z-index: 1;
 }
 
-.section2 .article .contentWrap .content .contentWrap {
+.section2 .article .contentContainer .content .contentWrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -220,33 +297,39 @@
     background-size: 300% 200%;
     background-position: 0 -100%;
     background-repeat: no-repeat;
-    transition: background-position 1s;
+    transition: background-position 0.75s;
 }
 
-.section2 .article .contentWrap .content:hover .contentWrap {
+.section2 .article .contentContainer .content:hover .contentWrap {
     background-position: 0 100%;
 }
 
-.section2 .article .contentWrap .content .contentWrap .contentHeader,
-.section2 .article .contentWrap .content .contentWrap .desc {
+.section2 .article .contentContainer .content .contentWrap .contentHeader,
+.section2 .article .contentContainer .content .contentWrap .desc {
     display: none;
     opacity: 0;
     transition: opacity 0.5s;
 }
-.section2 .article .contentWrap .content:hover .contentWrap .contentHeader,
-.section2 .article .contentWrap .content:hover .contentWrap .desc {
+.section2 .article .contentContainer .content:hover .contentWrap .contentHeader,
+.section2 .article .contentContainer .content:hover .contentWrap .desc {
     display: flex;
     opacity: 1;
 }
 
-.section2 .article .contentWrap .content .contentWrap .contentHeader {
+.section2 .article .contentContainer .content .contentWrap .contentHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.section2 .article .contentWrap .content .contentWrap .contentHeader .tags {
+.section2
+    .article
+    .contentContainer
+    .content
+    .contentWrap
+    .contentHeader
+    .tags {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -255,7 +338,7 @@
 
 .section2
     .article
-    .contentWrap
+    .contentContainer
     .content
     .contentWrap
     .contentHeader
@@ -276,7 +359,13 @@
     cursor: pointer;
 }
 
-.section2 .article .contentWrap .content .contentWrap .contentHeader .link {
+.section2
+    .article
+    .contentContainer
+    .content
+    .contentWrap
+    .contentHeader
+    .link {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -286,36 +375,82 @@
     background-color: transparent;
     border: 1px solid white;
     border-radius: 50%;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .section2
     .article
-    .contentWrap
+    .contentContainer
     .content
     .contentWrap
     .contentHeader
     .link:hover {
     background-color: white;
+    color: var(--dgu-orange);
 }
 
-.section2
-    .article
-    .contentWrap
-    .content
-    .contentWrap
-    .contentHeader
-    .link:hover
-    svg
-    path {
-    stroke: var(--dgu-orange);
-}
-
-.section2 .article .contentWrap .content .contentWrap .desc {
+.section2 .article .contentContainer .content .contentWrap .desc {
     display: flex;
     width: 100%;
     max-height: 4.5rem;
     overflow: hidden;
+    color: white;
+}
+
+.section2 .article .contentContainer .controlBtn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem #cccccc99;
+    transform: translateY(-50%) scale(1);
+    transition: background-color 0.3s;
+    z-index: 2000;
+    opacity: 0;
+    animation: controlBtnFadeIn 0.3s 3s forwards;
+    cursor: pointer;
+}
+
+.section2 .article .contentContainer .controlBtn:hover {
+    background-color: #efefef;
+}
+
+.section2 .article .contentContainer .controlBtn.prvBtn {
+    left: 2rem;
+    top: 50%;
+}
+
+.section2 .article .contentContainer .controlBtn.nxtBtn {
+    right: 2rem;
+    top: 50%;
+}
+
+#landingPage .section.section3 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    height: calc(100svh + 4rem);
+    background-color: var(--dgu-orange);
+    border-radius: 4rem 4rem 0 0;
+}
+
+.section3 .article {
+    align-items: center;
+    justify-content: center;
+    max-width: 100svw;
+    height: 100%;
+}
+
+.section3 .article .mainTypo {
+    font-size: 12rem;
+    font-weight: 500;
+    line-height: 6rem;
     color: white;
 }

@@ -1,36 +1,46 @@
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
-import SideBar from "@/components/sidebar/component";
+// 라이브러리
+import { Outlet, useNavigate } from "react-router-dom";
+// 컴포넌트
+import PageIn from "@/components/pageTransition/pageIn";
+// 스타일
 import "./style.css";
-import Header from "@/components/header/component";
+import PageOut from "@/components/pageTransition/pageOut";
+import { useEffect, useState } from "react";
 
 const DetailLayout = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
+    const navigate = useNavigate();
+    const [isIn, setIsIn] = useState(true);
+    const [isOut, setIsOut] = useState(false);
+    const pageInHandler = () => {
+        setTimeout(() => {
+            setIsIn(false);
+        }, 1000);
+    };
+    const pageOutHandler = (url = "") => {
+        setIsOut(true);
+        setTimeout(() => {
+            navigate(url);
+        }, 1000);
+    };
+    useEffect(() => {
+        pageInHandler();
+    }, []);
     return (
-        <div id="detailLayout">
-            <SideBar onActivate={isOpen} />
-            <div id="mainSection">
-                <Header
-                    title="대학안내"
-                    step1={{
-                        seleted: "스탭1",
-                        list: ["스탭1", "스탭1", "스탭1"],
-                    }}
-                    step2={{
-                        seleted: "스탭2",
-                        list: ["스탭2", "스탭2", "스탭2"],
-                    }}
-                    step3={{
-                        seleted: "스탭3",
-                        list: [],
+        <>
+            <div id="detailLayout">
+                <Outlet
+                    context={{
+                        pageOutHandler,
                     }}
                 />
-                <div id="contentSection">
-                    <Outlet />
-                </div>
             </div>
-        </div>
+            {(isIn || isOut) && (
+                <div id="pageTransition">
+                    {isIn && <PageIn />}
+                    {isOut && <PageOut />}
+                </div>
+            )}
+        </>
     );
 };
 
