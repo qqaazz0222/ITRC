@@ -221,8 +221,7 @@ const LandingPage = () => {
             <div className="section section3" ref={s3Ref}>
                 <div className="article">
                     <div className="mainTypo">
-                        <p className="small">PARTICIPANT LABS</p>
-                        <p></p>
+                        <p>PARTICIPANT LABS</p>
                     </div>
                 </div>
             </div>

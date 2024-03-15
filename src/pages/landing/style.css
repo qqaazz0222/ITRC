@@ -453,4 +453,13 @@
     font-weight: 500;
     line-height: 6rem;
     color: white;
+    opacity: 0;
+    animation: TestAnima;
+    animation-timeline: view(-1000px);
+}
+
+@keyframes TestAnima {
+    to {
+        opacity: 1;
+    }
 }
