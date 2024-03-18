@@ -22,7 +22,7 @@ import "./animation.css";
 import "./style.css";
 
 const LandingPage = () => {
-    const { pageOutHandler } = useOutletContext();
+    // const { pageOutHandler } = useOutletContext();
     const [currentContent, setCurrentContent] = useState(0);
     const [s1Ref, s1InView] = useInView();
     const [s2Ref, s2InView] = useInView();
