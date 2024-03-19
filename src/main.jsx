@@ -1,6 +1,7 @@
 // 라이브러리
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 // 서비스
 // 레이아웃
 import LandingLayout from "./layouts/landingLayout/layout";
@@ -12,7 +13,6 @@ import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
 import "./custom.css";
-import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
     {

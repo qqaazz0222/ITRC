@@ -1,0 +1,44 @@
+#welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100svw;
+    min-height: 100svh;
+    height: fit-content;
+}
+
+#welcomeSection .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcomeSection .article .mainTypo {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--foreground-color);
+    line-height: 4.5rem;
+    letter-spacing: -0.25rem;
+    text-align: center;
+    transition: color 1s;
+    user-select: none;
+}
+
+#welcomeSection .article .mainTypo p {
+}
+
+#welcomeSection .article .subTypo {
+    padding: 0.875rem 2rem;
+    background-color: var(--foreground-color);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--background-color);
+    line-height: 1rem;
+    letter-spacing: -0.0125rem;
+    text-align: center;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+}

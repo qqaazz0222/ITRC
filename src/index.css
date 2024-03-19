@@ -5,6 +5,9 @@
 /* black */
 @layer base {
     :root {
+        --background-color: #ffe752;
+        --foreground-color: #4a411f;
+        --foreground-color-light: #6c5e2e;
         --background: 0 0% 100%;
         --foreground: 20 14.3% 4.1%;
         --muted: 60 4.8% 95.9%;

@@ -1,11 +1,12 @@
 // 라이브러리
+import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 // 컴포넌트
+import Header from "@/components/header/component";
 import PageIn from "@/components/pageTransition/pageIn";
+import PageOut from "@/components/pageTransition/pageOut";
 // 스타일
 import "./style.css";
-import PageOut from "@/components/pageTransition/pageOut";
-import { useEffect, useState } from "react";
 
 const LandingLayout = () => {
     const navigate = useNavigate();
@@ -28,6 +29,7 @@ const LandingLayout = () => {
     return (
         <>
             <div id="landingLayout">
+                <Header />
                 <Outlet
                     context={{
                         pageOutHandler,

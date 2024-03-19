@@ -1,14 +1,24 @@
 @font-face {
     font-family: "Wanted Sans Variable";
     font-style: normal;
-    font-display: swap;
-    font-weight: 400 1000;
     src: url("./assets/fonts/WantedSansVariable.woff2")
         format("woff2-variations");
 }
+@font-face {
+    font-family: "Cafe24ClassicType";
+    src: url("./assets/fonts/Cafe24Classictype.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "LOTTERIADDAG";
+    src: url("./assets/fonts/LOTTERIADDAG.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 * {
-    font-family: "Wanted Sans Variable" !important;
+    font-family: "Wanted Sans Variable";
 }
 
 .w-responsive-sign {

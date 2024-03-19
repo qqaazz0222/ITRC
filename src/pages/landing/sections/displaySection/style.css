@@ -1,0 +1,80 @@
+#displaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100svw;
+    min-height: 100svh;
+    height: fit-content;
+}
+
+#displaySection .iphone-mock-wrap {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background-color: white;
+    border-radius: 3rem;
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-70svh) scale(0.8);
+    box-shadow: 0 1rem 2rem #00000044, 0 3rem 2rem #00000011;
+}
+
+#displaySection .iphone-mock-wrap .frame {
+    width: 100%;
+    transform: scale(1.02);
+}
+
+#displaySection .controlWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 280px;
+    height: 3rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem #00000022;
+}
+
+#displaySection .controlWrap .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--foreground-color);
+    border-radius: 50%;
+    color: var(--background-color);
+    transition: background-color 1s, color 1s;
+}
+
+#displaySection .controlWrap .indecator {
+    flex: 1;
+    justify-content: start;
+    align-items: start;
+    transform: translateY(0);
+    transition: transform 1s;
+}
+
+#displaySection .controlWrap .indecator .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--foreground-color);
+    transition: color 1s;
+}
