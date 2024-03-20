@@ -10,6 +10,9 @@ import ThumbModel1_1 from "@/assets/thumbnail/thumb-model-1-1.png";
 import ThumbModel1_2 from "@/assets/thumbnail/thumb-model-1-2.png";
 // 비디오
 import VideoModel1 from "@/assets/videos/video-model-1.mp4";
+import Sand from "@/assets/videos/sand.mp4";
+import Tile from "@/assets/videos/tile.mp4";
+import Lava from "@/assets/videos/lava.mp4";
 // 스타일
 import "./style.css";
 
@@ -29,12 +32,12 @@ const ModelSection = ({ pageOutHandler }) => {
                     />
                     <Model2
                         onClick={() => {
-                            pageOutHandler("/model/2");
+                            pageOutHandler("/model/robustqa");
                         }}
                     />
                     <Model3
                         onClick={() => {
-                            pageOutHandler("/model/3");
+                            pageOutHandler("/model/deepscan");
                         }}
                     />
                     <Model4
@@ -78,6 +81,7 @@ ModelDescription.propTypes = {
 const Model1 = ({ onClick }) => {
     return (
         <div className="modelWrap model1" onClick={onClick}>
+            <video src={Sand} muted autoPlay loop />
             <ModelTitle title={"NIA"} />
             <ModelDescription
                 desc={
@@ -147,7 +151,8 @@ Model1.propTypes = {
 const Model2 = ({ onClick }) => {
     return (
         <div className="modelWrap model2" onClick={onClick}>
-            <ModelTitle title={"Answer Anything"} />
+            <video src={Lava} muted autoPlay loop />
+            <ModelTitle title={"RoBustQA"} />
             <ModelDescription
                 desc={
                     "Schedule all your cards and gifts now and we’ll send them later"
@@ -164,7 +169,8 @@ Model2.propTypes = {
 const Model3 = ({ onClick }) => {
     return (
         <div className="modelWrap model3" onClick={onClick}>
-            <ModelTitle title={"Image Search"} />
+            <video src={Tile} muted autoPlay loop />
+            <ModelTitle title={"DeepScan"} />
             <ModelDescription
                 desc={
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"

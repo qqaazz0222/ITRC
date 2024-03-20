@@ -9,11 +9,7 @@ import ModelLayout from "./layouts/modelLayout/layout";
 import DemoLayout from "./layouts/demoLayout/layout";
 // 페이지
 import LandingPage from "./pages/landing/page";
-import {
-    ModelNiaPage,
-    ModelQNAPage,
-    ModelRoBustPage,
-} from "./pages/model/page";
+import ModelPage from "./pages/model/page";
 import { DemoNiaPage } from "./pages/demo/page";
 import ErrorPage from "./pages/error/page";
 // 스타일
@@ -35,15 +31,15 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/model/nia",
-                element: <ModelNiaPage />,
+                element: <ModelPage project={"nia"} />,
             },
             {
-                path: "/model/robust",
-                element: <ModelRoBustPage />,
+                path: "/model/robustqa",
+                element: <ModelPage project={"robustqa"} />,
             },
             {
-                path: "/model/qna",
-                element: <ModelQNAPage />,
+                path: "/model/deepscan",
+                element: <ModelPage project={"deepscan"} />,
             },
         ],
     },

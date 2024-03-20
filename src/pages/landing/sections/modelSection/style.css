@@ -40,15 +40,31 @@
     padding: 1.5rem;
     width: 100%;
     min-height: 280px;
-    background-color: var(--dgu-yellow-50);
+    background: var(--dgu-yellow-50);
     border-radius: 2rem;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
     z-index: 1;
 }
 
 #modelSection .article .modelContainer .modelWrap:hover {
-    background-color: var(--dgu-yellow-75);
     z-index: 10;
+}
+
+#modelSection .article .modelContainer .modelWrap > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    opacity: 0;
+    object-fit: cover;
+    transition: opacity 0.75s;
+    z-index: -1;
+}
+
+#modelSection .article .modelContainer .modelWrap:hover > video {
+    opacity: 1;
 }
 
 #modelSection .article .modelContainer .modelWrap .modelTitle {
@@ -86,7 +102,12 @@
     height: 100%;
     transform: translate(-50%, -50%);
 }
-
+#modelSection .article .modelContainer .modelWrap.model1 {
+    background: var(--dgu-yellow-50) url("/images/round.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 70% -300%;
+}
 #modelSection .article .modelContainer .modelWrap.model1 .modelContent .thumb1 {
     position: absolute;
     top: 50%;

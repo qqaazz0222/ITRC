@@ -6,12 +6,12 @@ const useTheme = (theme) => {
     if (theme === "red") {
         bg = "#7D0A0A";
         fg = "#D04848";
-    } else if (theme === "orange") {
-        bg = "#FFCF81";
-        fg = "#FC6736";
-    } else if (theme === "yellow" || theme === "init") {
-        bg = "#3E3232";
-        fg = "#FFD23F";
+    } else if (theme === "orange" || theme === "init") {
+        bg = "#f29301";
+        fg = "#111111";
+    } else if (theme === "yellow") {
+        bg = "#fbc401";
+        fg = "#111111";
     } else if (theme === "white") {
         bg = "#ffffff";
         fg = "#111111";

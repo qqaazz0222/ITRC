@@ -39,6 +39,9 @@
     text-align: center;
 }
 
+.modelPage p {
+    line-height: 1.6;
+}
 strong {
     color: #111;
     font-weight: 500 !important;
@@ -141,7 +144,7 @@ strong {
     height: 3.3125rem;
     padding: 0.75rem 2rem;
     background-color: transparent;
-    border: 1px solid #ffffff22;
+    border: 1px solid #ffffff44;
     border-radius: 4rem;
     font-size: 1.125em;
     color: #ffffff;
@@ -153,8 +156,8 @@ strong {
     opacity: 0;
 }
 .modelPage .titleSection .tryOutBtn:hover {
-    background-color: #ffffff11;
-    border: 1px solid #ffffff44;
+    background-color: #ffffff33;
+    border: 1px solid #ffffff66;
 }
 .modelPage .titleSection .tryOutBtn p {
     min-height: 3.3125rem;
@@ -256,7 +259,7 @@ strong {
     padding-bottom: 5rem;
     width: 100%;
     max-width: 960px;
-    user-select: none;
+    /* user-select: none; */
 }
 
 .modelPage .contentSection .article .articleTitle {
@@ -278,18 +281,20 @@ strong {
 
 .modelPage .contentSection .article .articleContent ul,
 .modelPage .contentSection .article .articleContent ol {
-    padding-left: 1rem;
+    list-style: none;
 }
 
 .modelPage .contentSection .article .articleContent ul li,
 .modelPage .contentSection .article .articleContent ol li {
     margin-bottom: 0.5rem;
-    list-style-type: disc;
 }
 
 .modelPage .contentSection .article .articleContent ul li ul,
 .modelPage .contentSection .article .articleContent ol li ul {
     margin: 0.25rem 0;
+}
+.modelPage .contentSection .article .articleContent li p {
+    list-style-type: disc;
 }
 
 .modelPage .contentSection .article .articleContent img {

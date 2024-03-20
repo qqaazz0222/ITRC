@@ -1,5 +1,5 @@
 // 라이브러리
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 // 서비스
 // 컴포넌트
@@ -19,7 +19,14 @@ const WelcomeSection = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
     return (
         <div id="welcomeSection" className="section">
-            <video className="bgVideo" src={WelcomeVideo} muted autoPlay loop />
+            <motion.video
+                className="bgVideo"
+                src={WelcomeVideo}
+                style={{ opacity }}
+                muted
+                autoPlay
+                loop
+            />
             <motion.div
                 className="article"
                 style={{
