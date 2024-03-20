@@ -9,6 +9,7 @@
     padding: 1.5rem 3rem;
     width: 100svw;
     z-index: 50;
+    transition: backdrop-filter 1s;
 }
 
 #header .logoWrap {
@@ -23,6 +24,7 @@
 #header .logoWrap .logo {
     width: 2rem;
     fill: var(--foreground-color);
+    transition: fill 1s;
 }
 
 #header .logoWrap .logoTypo {
@@ -30,6 +32,7 @@
     font-size: 1.375rem;
     font-weight: 500;
     color: var(--foreground-color);
+    transition: color 1s;
 }
 
 #header .menuWrap {
@@ -42,6 +45,7 @@
 
 #header .menuWrap .menu {
     cursor: pointer;
+    user-select: none;
 }
 
 #header .menuWrap .menu.link {
@@ -49,7 +53,7 @@
     font-weight: 500;
     color: var(--foreground-color);
     opacity: 0.75;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, color 1s;
 }
 
 #header .menuWrap .menu.link:hover {

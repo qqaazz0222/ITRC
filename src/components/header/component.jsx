@@ -1,12 +1,12 @@
 // 라이브러리
+import { PropTypes } from "prop-types";
 // 서비스
 // 컴포넌트
 // 아이콘
 // 스타일
 import "./style.css";
 
-// eslint-disable-next-line react/prop-types
-const Header = () => {
+const Header = ({ pageOutHandler }) => {
     return (
         <div id="header">
             <div className="logoWrap">
@@ -24,14 +24,36 @@ const Header = () => {
                 <div className="logoTypo">Ai PlayGround</div>
             </div>
             <div className="menuWrap">
-                <div className="menu link">About Project</div>
-                <div className="menu link">Developer</div>
-                <div className="menu btn">
-                    Try<span></span>
+                <div
+                    className="menu link"
+                    onClick={() => {
+                        pageOutHandler("/about/project");
+                    }}
+                >
+                    About Project
+                </div>
+                <div
+                    className="menu link"
+                    onClick={() => {
+                        pageOutHandler("/about/developer");
+                    }}
+                >
+                    Developer
+                </div>
+                <div
+                    className="menu btn"
+                    onClick={() => {
+                        location.href = "#section3";
+                    }}
+                >
+                    Try
                 </div>
             </div>
         </div>
     );
+};
+Header.propTypes = {
+    pageOutHandler: PropTypes.func.isRequired,
 };
 
 export default Header;

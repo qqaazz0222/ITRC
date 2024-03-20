@@ -6,6 +6,6 @@
     width: 100svw;
     min-height: 100svh;
     background-color: var(--background-color);
-    overflow: hidden;
+    overflow: scroll;
     transition: background 1s;
 }

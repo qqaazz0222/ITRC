@@ -5,10 +5,16 @@ import { AnimatePresence } from "framer-motion";
 // 서비스
 // 레이아웃
 import LandingLayout from "./layouts/landingLayout/layout";
-import DetailLayout from "./layouts/detailLayout/layout";
+import ModelLayout from "./layouts/modelLayout/layout";
+import DemoLayout from "./layouts/demoLayout/layout";
 // 페이지
 import LandingPage from "./pages/landing/page";
-import DetailPage from "./pages/detail/page";
+import {
+    ModelNiaPage,
+    ModelQNAPage,
+    ModelRoBustPage,
+} from "./pages/model/page";
+import { DemoNiaPage } from "./pages/demo/page";
 import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
@@ -25,11 +31,36 @@ const router = createBrowserRouter([
         ],
     },
     {
-        element: <DetailLayout />,
+        element: <ModelLayout />,
         children: [
             {
-                path: "/detail",
-                element: <DetailPage />,
+                path: "/model/nia",
+                element: <ModelNiaPage />,
+            },
+            {
+                path: "/model/robust",
+                element: <ModelRoBustPage />,
+            },
+            {
+                path: "/model/qna",
+                element: <ModelQNAPage />,
+            },
+        ],
+    },
+    {
+        element: <DemoLayout />,
+        children: [
+            {
+                path: "/demo/nia",
+                element: <DemoNiaPage />,
+            },
+            {
+                path: "/model/2",
+                element: <></>,
+            },
+            {
+                path: "/model/3",
+                element: <></>,
             },
         ],
     },

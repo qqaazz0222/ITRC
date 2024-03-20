@@ -17,14 +17,12 @@
 
 #modelSection .article .mainTypo {
     margin-bottom: 5rem;
+    font-family: "AlmarenaDisplay";
     font-size: 4rem;
     font-weight: 700;
     color: var(--gray-800);
     line-height: 4.5rem;
     text-align: center;
-}
-
-#modelSection .article .mainTypo p {
 }
 
 #modelSection .article .modelContainer {
@@ -54,6 +52,7 @@
 }
 
 #modelSection .article .modelContainer .modelWrap .modelTitle {
+    font-family: "AlmarenaDisplay";
     letter-spacing: -0.065rem;
     font-size: 1.5rem;
     font-weight: 700;
@@ -61,8 +60,8 @@
 }
 #modelSection .article .modelContainer .modelWrap .modelDesc {
     font-size: 0.875rem;
-    font-weight: 500;
-    color: #52225e;
+    font-weight: 400;
+    color: #666666;
 }
 
 #modelSection .article .modelContainer .modelWrap .modelContent {

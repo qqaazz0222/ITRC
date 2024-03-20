@@ -1,30 +1,26 @@
-// import { useThemeStore } from "@/stores/themeStore";
-
 const useTheme = (theme) => {
-    // const setGlobalTheme = useThemeStore((state) => state.setGlobalTheme);
     let bg =
         document.documentElement.style.getPropertyValue(`--background-color`);
     let fg =
         document.documentElement.style.getPropertyValue(`--foreground-color`);
     if (theme === "red") {
-        bg = "#F96E3B";
-        fg = "#4F1316";
+        bg = "#7D0A0A";
+        fg = "#D04848";
     } else if (theme === "orange") {
-        bg = "#FFB142";
-        fg = "#bf6f1a";
+        bg = "#FFCF81";
+        fg = "#FC6736";
     } else if (theme === "yellow" || theme === "init") {
-        bg = "#FFE752";
-        fg = "#4A411F";
+        bg = "#3E3232";
+        fg = "#FFD23F";
     } else if (theme === "white") {
         bg = "#ffffff";
-        fg = "#262920";
+        fg = "#111111";
     } else if (theme === "black") {
-        bg = "#191D11";
-        fg = "#FAFCF5";
+        bg = "#111111";
+        fg = "#ffffff";
     }
     document.documentElement.style.setProperty(`--background-color`, bg);
     document.documentElement.style.setProperty(`--foreground-color`, fg);
-    // setGlobalTheme(theme ? theme : "init");
 };
 
 export default useTheme;

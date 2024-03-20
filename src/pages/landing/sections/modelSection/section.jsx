@@ -1,5 +1,5 @@
 // 라이브러리
-import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 // 서비스
 // 컴포넌트
 // 아이콘
@@ -13,7 +13,7 @@ import VideoModel1 from "@/assets/videos/video-model-1.mp4";
 // 스타일
 import "./style.css";
 
-const ModelSection = () => {
+const ModelSection = ({ pageOutHandler }) => {
     return (
         <div id="modelSection" className="section">
             <div className="article">
@@ -22,29 +22,63 @@ const ModelSection = () => {
                     <p>Posibilities.</p>
                 </div>
                 <div className="modelContainer">
-                    <Model1 />
-                    <Model2 />
-                    <Model3 />
-                    <Model4 />
-                    <Model5 />
-                    <Model6 />
+                    <Model1
+                        onClick={() => {
+                            pageOutHandler("/model/nia");
+                        }}
+                    />
+                    <Model2
+                        onClick={() => {
+                            pageOutHandler("/model/2");
+                        }}
+                    />
+                    <Model3
+                        onClick={() => {
+                            pageOutHandler("/model/3");
+                        }}
+                    />
+                    <Model4
+                        onClick={() => {
+                            pageOutHandler("/model/4");
+                        }}
+                    />
+                    <Model5
+                        onClick={() => {
+                            pageOutHandler("/model/5");
+                        }}
+                    />
+                    <Model6
+                        onClick={() => {
+                            pageOutHandler("/model/6");
+                        }}
+                    />
                 </div>
             </div>
         </div>
     );
 };
+ModelSection.propTypes = {
+    pageOutHandler: PropTypes.func.isRequired,
+};
 
 const ModelTitle = ({ title }) => {
-    return <div className="modelTitle">{title}</div>;
+    return <div className="modelTitle">Project : {title}</div>;
 };
+ModelTitle.propTypes = {
+    title: PropTypes.string.isRequired,
+};
+
 const ModelDescription = ({ desc }) => {
     return <div className="modelDesc">{desc}</div>;
 };
+ModelDescription.propTypes = {
+    desc: PropTypes.string.isRequired,
+};
 
-const Model1 = () => {
+const Model1 = ({ onClick }) => {
     return (
-        <div className="modelWrap model1">
-            <ModelTitle title={"Detect Strange"} />
+        <div className="modelWrap model1" onClick={onClick}>
+            <ModelTitle title={"NIA"} />
             <ModelDescription
                 desc={
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
@@ -106,9 +140,13 @@ const Model1 = () => {
         </div>
     );
 };
-const Model2 = () => {
+Model1.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+const Model2 = ({ onClick }) => {
     return (
-        <div className="modelWrap model2">
+        <div className="modelWrap model2" onClick={onClick}>
             <ModelTitle title={"Answer Anything"} />
             <ModelDescription
                 desc={
@@ -119,9 +157,13 @@ const Model2 = () => {
         </div>
     );
 };
-const Model3 = () => {
+Model2.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+const Model3 = ({ onClick }) => {
     return (
-        <div className="modelWrap model3">
+        <div className="modelWrap model3" onClick={onClick}>
             <ModelTitle title={"Image Search"} />
             <ModelDescription
                 desc={
@@ -132,9 +174,13 @@ const Model3 = () => {
         </div>
     );
 };
-const Model4 = () => {
+Model3.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+const Model4 = ({ onClick }) => {
     return (
-        <div className="modelWrap model4">
+        <div className="modelWrap model4" onClick={onClick}>
             <ModelTitle title={"Model 4"} />
             <ModelDescription
                 desc={
@@ -145,9 +191,13 @@ const Model4 = () => {
         </div>
     );
 };
-const Model5 = () => {
+Model4.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+const Model5 = ({ onClick }) => {
     return (
-        <div className="modelWrap model5">
+        <div className="modelWrap model5" onClick={onClick}>
             <ModelTitle title={"Model 5"} />
             <ModelDescription
                 desc={
@@ -158,9 +208,13 @@ const Model5 = () => {
         </div>
     );
 };
-const Model6 = () => {
+Model5.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+const Model6 = ({ onClick }) => {
     return (
-        <div className="modelWrap model6">
+        <div className="modelWrap model6" onClick={onClick}>
             <ModelTitle title={"Model 6"} />
             <ModelDescription
                 desc={
@@ -170,6 +224,9 @@ const Model6 = () => {
             <div className="modelContent">content</div>
         </div>
     );
+};
+Model6.propTypes = {
+    onClick: PropTypes.func.isRequired,
 };
 
 export default ModelSection;

@@ -7,6 +7,19 @@
     min-height: 100svh;
     height: fit-content;
 }
+#welcomeSection .bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    min-width: 100svw;
+    height: 100svh;
+    min-height: 100svh;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.7;
+    mix-blend-mode: multiply;
+}
 
 #welcomeSection .article {
     display: flex;
@@ -16,10 +29,11 @@
 
 #welcomeSection .article .mainTypo {
     margin-bottom: 2rem;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: var(--foreground-color);
-    line-height: 4.5rem;
+    font-family: "AlmarenaDisplay";
+    line-height: 5.5rem;
     letter-spacing: -0.25rem;
     text-align: center;
     transition: color 1s;
@@ -41,4 +55,5 @@
     text-align: center;
     transition: background-color 1s, color 1s;
     cursor: pointer;
+    user-select: none;
 }

@@ -5,22 +5,45 @@
         format("woff2-variations");
 }
 @font-face {
-    font-family: "Cafe24ClassicType";
-    src: url("./assets/fonts/Cafe24Classictype.woff2") format("woff2");
-    font-weight: normal;
+    font-family: "AlmarenaDisplay";
+    src: url("./assets/fonts/AlmarenaDisplay-Light.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AlmarenaDisplay";
+    src: url("./assets/fonts/AlmarenaDisplay-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AlmarenaDisplay";
+    src: url("./assets/fonts/AlmarenaDisplay-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "LOTTERIADDAG";
-    src: url("./assets/fonts/LOTTERIADDAG.woff2") format("woff2");
-    font-weight: normal;
+    font-family: "Title";
+    src: url("./assets/fonts/Title-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: "Title";
+    src: url("./assets/fonts/Title-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     font-family: "Wanted Sans Variable";
 }
-
 .w-responsive-sign {
     width: 460px;
     max-width: 460px;
@@ -44,4 +67,12 @@ img {
 
 .page {
     z-index: 0;
+}
+
+.displayFont {
+    font-family: "Title";
+}
+
+p {
+    font-family: inherit;
 }

@@ -30,7 +30,7 @@
 #displaySection .controlWrap {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     position: absolute;
     bottom: 10rem;
@@ -61,7 +61,7 @@
 #displaySection .controlWrap .indecator {
     flex: 1;
     justify-content: start;
-    align-items: start;
+    align-items: flex-start;
     transform: translateY(0);
     transition: transform 1s;
 }

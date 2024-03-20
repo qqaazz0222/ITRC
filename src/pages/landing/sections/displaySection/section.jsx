@@ -1,7 +1,6 @@
 // 라이브러리
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import useTheme from "@/hooks/useTheme";
 // 서비스
 // 컴포넌트
 // 이미지
@@ -11,8 +10,11 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 // 스타일
 import "./style.css";
 
-const DisplaySection = () => {
-    const Themes = ["yellow", "orange", "red", "black", "white"];
+const DisplaySection = ({
+    themes = [],
+    currentTheme = "",
+    setCurrentTheme = () => {},
+}) => {
     const [currentIdx, setCurrentIdx] = useState(0);
     const displaySectionRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -21,7 +23,7 @@ const DisplaySection = () => {
     });
     const y = useTransform(scrollYProgress, [0, 1], ["-115svh", "-50%"]);
     const scale = useTransform(scrollYProgress, [0, 0.8], [0.8, 1.2]);
-    const themeHandler = useTheme;
+
     const indexHandler = (type) => {
         if (type === "next") {
             setCurrentIdx(currentIdx + 1);
@@ -34,7 +36,7 @@ const DisplaySection = () => {
         target.style.transform = `translateY(-${3 * index + 0.25}rem)`;
     };
     useEffect(() => {
-        themeHandler(Themes[currentIdx]);
+        setCurrentTheme(themes[currentIdx]);
         indecatorHandler(currentIdx);
     }, [currentIdx]);
     return (
@@ -59,7 +61,7 @@ const DisplaySection = () => {
                     <ArrowLeft className="w-6 h-6" />
                 </div>
                 <div className="indecator">
-                    {Themes.map((theme, idx) => (
+                    {themes.map((theme, idx) => (
                         <div className="option" key={`theme${idx}`}>
                             {theme}
                         </div>
