@@ -43,13 +43,11 @@ strong {
     color: #111;
     font-weight: 500 !important;
 }
-
-/* Model 1 Page */
-#model1Page {
+.modelPage {
     width: 100svw;
     min-height: 100svh;
 }
-#model1Page .headerSection {
+.modelPage .headerSection {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +59,7 @@ strong {
     transition: background-color 1s, color 1s;
     z-index: 50;
 }
-#model1Page .titleSection {
+.modelPage .titleSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +71,7 @@ strong {
     z-index: 0;
     overflow: hidden;
 }
-#model1Page .titleSection video {
+.modelPage .titleSection video {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +80,7 @@ strong {
     object-fit: cover;
     opacity: 1;
 }
-#model1Page .titleSection .article {
+.modelPage .titleSection .article {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +92,7 @@ strong {
     justify-content: center;
     z-index: 1;
 }
-#model1Page .titleSection .mainTypo {
+.modelPage .titleSection .mainTypo {
     margin-bottom: 1rem;
     font-size: 6rem;
     font-family: "AlmarenaDisplay";
@@ -109,7 +107,7 @@ strong {
     animation: fadeInUp 2s 1s forwards;
     opacity: 0;
 }
-#model1Page .titleSection .subTypo {
+.modelPage .titleSection .subTypo {
     margin-bottom: 1rem;
     font-size: 3rem;
     font-family: "AlmarenaDisplay";
@@ -124,7 +122,7 @@ strong {
     opacity: 0;
 }
 
-#model1Page .titleSection .tags {
+.modelPage .titleSection .tags {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,7 +134,7 @@ strong {
     animation: fadeIn 2s 2s forwards;
     opacity: 0;
 }
-#model1Page .titleSection .tryOutBtn {
+.modelPage .titleSection .tryOutBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,21 +152,21 @@ strong {
     animation: fadeIn 2s 2s forwards;
     opacity: 0;
 }
-#model1Page .titleSection .tryOutBtn:hover {
+.modelPage .titleSection .tryOutBtn:hover {
     background-color: #ffffff11;
     border: 1px solid #ffffff44;
 }
-#model1Page .titleSection .tryOutBtn p {
+.modelPage .titleSection .tryOutBtn p {
     min-height: 3.3125rem;
     transform: translateY(0);
     transition: transform 0.3s;
 }
 
-#model1Page .titleSection .tryOutBtn:hover p {
+.modelPage .titleSection .tryOutBtn:hover p {
     transform: translateY(-3.3125rem);
 }
 
-#model1Page .titleSection .readMoreWrap {
+.modelPage .titleSection .readMoreWrap {
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -178,7 +176,7 @@ strong {
     opacity: 0.7;
 }
 
-#model1Page .titleSection .readMoreWrap .mouseWrap {
+.modelPage .titleSection .readMoreWrap .mouseWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +197,7 @@ strong {
     }
 }
 
-#model1Page .titleSection .readMoreWrap .mouseBody {
+.modelPage .titleSection .readMoreWrap .mouseBody {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +208,7 @@ strong {
     border-radius: 1rem;
 }
 
-#model1Page .titleSection .readMoreWrap .mouseWheel {
+.modelPage .titleSection .readMoreWrap .mouseWheel {
     width: 0.375rem;
     height: 0.375rem;
     background-color: #ffffff;
@@ -238,7 +236,7 @@ strong {
     }
 }
 
-#model1Page .contentSection {
+.modelPage .contentSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +249,7 @@ strong {
     z-index: 10;
 }
 
-#model1Page .contentSection .article {
+.modelPage .contentSection .article {
     display: flex;
     flex-direction: column;
     grid-auto-columns: max-content;
@@ -261,7 +259,7 @@ strong {
     user-select: none;
 }
 
-#model1Page .contentSection .article .articleTitle {
+.modelPage .contentSection .article .articleTitle {
     margin-bottom: 0.5rem;
     font-family: "AlmarenaDisplay";
     font-size: 3rem;
@@ -269,23 +267,36 @@ strong {
     text-transform: uppercase;
 }
 
-#model1Page .contentSection .article .articleContent {
+.modelPage .contentSection .article .articleContent {
     font-size: 1.125rem;
     color: #000000dd;
 }
 
-#model1Page .contentSection .article .articleContent ul {
+.modelPage .contentSection .article .articleContent p {
+    margin-bottom: 1.5rem;
+}
+
+.modelPage .contentSection .article .articleContent ul,
+.modelPage .contentSection .article .articleContent ol {
     padding-left: 1rem;
 }
 
-#model1Page .contentSection .article .articleContent ul li {
+.modelPage .contentSection .article .articleContent ul li,
+.modelPage .contentSection .article .articleContent ol li {
     margin-bottom: 0.5rem;
     list-style-type: disc;
 }
 
-#model1Page .contentSection .article .articleContent ul li ul {
+.modelPage .contentSection .article .articleContent ul li ul,
+.modelPage .contentSection .article .articleContent ol li ul {
     margin: 0.25rem 0;
 }
+
+.modelPage .contentSection .article .articleContent img {
+    margin-bottom: 2rem;
+}
+/* Model 1 Page */
+
 /* Model 2 Page */
 
 /* Model 3 Page */
