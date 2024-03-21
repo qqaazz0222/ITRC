@@ -1,15 +1,12 @@
 // 라이브러리
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
+import { isMobile } from "react-device-detect";
 // 서비스
 // 컴포넌트
 // 아이콘
-import { ScanSearch } from "lucide-react";
 // 이미지
-import ThumbModel1 from "@/assets/thumbnail/thumb-model-1.png";
-import ThumbModel1_1 from "@/assets/thumbnail/thumb-model-1-1.png";
-import ThumbModel1_2 from "@/assets/thumbnail/thumb-model-1-2.png";
 // 비디오
-import VideoModel1 from "@/assets/videos/video-model-1.mp4";
 import Sand from "@/assets/videos/sand.mp4";
 import Tile from "@/assets/videos/tile.mp4";
 import Lava from "@/assets/videos/lava.mp4";
@@ -79,109 +76,132 @@ ModelDescription.propTypes = {
 };
 
 const Model1 = ({ onClick }) => {
+    const videoRef = useRef();
+    const [isHover, setIsHover] = useState(false);
+    useEffect(() => {
+        if (isHover) {
+            videoRef.current.play();
+        } else {
+            videoRef.current.pause();
+        }
+    }, [isHover]);
     return (
-        <div className="modelWrap model1" onClick={onClick}>
-            <video src={Sand} muted autoPlay loop />
+        <div
+            className="modelWrap model1"
+            onClick={onClick}
+            onMouseOver={() => {
+                setIsHover(true);
+            }}
+            onMouseOut={() => {
+                setIsHover(false);
+            }}
+        >
+            <video
+                ref={videoRef}
+                src={Sand}
+                muted
+                loop
+                playsInline
+                autoPlay={isMobile}
+            />
             <ModelTitle title={"NIA"} />
             <ModelDescription
                 desc={
-                    "Use a pre-designed template or personalize with video, stickers, fonts, and more"
+                    "NIA 모델은 주거지역 내에서 이상 행동을 실시간으로 탐지하여 범죄를 사전에 예방하는 데 중점을 둔 모델입니다."
                 }
             />
-            <div className="modelContent">
-                <img
-                    className="thumb thumb1_1"
-                    src={ThumbModel1_1}
-                    alt="thumbModel1"
-                />
-                <img
-                    className="thumb thumb1_2"
-                    src={ThumbModel1_2}
-                    alt="thumbModel1"
-                />
-                <img
-                    className="thumb thumb1"
-                    src={ThumbModel1}
-                    alt="thumbModel1"
-                />
-                <video
-                    className="video video1"
-                    src={VideoModel1}
-                    alt="videoModel1"
-                    muted
-                    autoPlay
-                    loop
-                />
-                <ScanSearch className="icon1 w-20 h-20 text-white" />
-                <div className="scrollResult">
-                    <div className="item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div className="item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div className="item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div className="item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div className="item">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };
 Model1.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 const Model2 = ({ onClick }) => {
+    const videoRef = useRef();
+    const [isHover, setIsHover] = useState(false);
+    useEffect(() => {
+        if (isHover) {
+            videoRef.current.play();
+        } else {
+            videoRef.current.pause();
+        }
+    }, [isHover]);
     return (
-        <div className="modelWrap model2" onClick={onClick}>
-            <video src={Lava} muted autoPlay loop />
+        <div
+            className="modelWrap model2"
+            onClick={onClick}
+            onMouseOver={() => {
+                setIsHover(true);
+            }}
+            onMouseOut={() => {
+                setIsHover(false);
+            }}
+        >
+            <video
+                ref={videoRef}
+                src={Lava}
+                muted
+                loop
+                playsInline
+                autoPlay={isMobile}
+            />
             <ModelTitle title={"RoBustQA"} />
             <ModelDescription
                 desc={
-                    "Schedule all your cards and gifts now and we’ll send them later"
+                    "RobustQA 모델은 일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 강력한 도구입니다."
                 }
             />
-            <div className="modelContent">content</div>
         </div>
     );
 };
 Model2.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 const Model3 = ({ onClick }) => {
+    const videoRef = useRef();
+    const [isHover, setIsHover] = useState(false);
+    useEffect(() => {
+        if (isHover) {
+            videoRef.current.play();
+        } else {
+            videoRef.current.pause();
+        }
+    }, [isHover]);
     return (
-        <div className="modelWrap model3" onClick={onClick}>
-            <video src={Tile} muted autoPlay loop />
+        <div
+            className="modelWrap model3"
+            onClick={onClick}
+            onMouseOver={() => {
+                setIsHover(true);
+            }}
+            onMouseOut={() => {
+                setIsHover(false);
+            }}
+        >
+            <video
+                ref={videoRef}
+                src={Tile}
+                muted
+                loop
+                playsInline
+                autoPlay={isMobile}
+            />
             <ModelTitle title={"DeepScan"} />
             <ModelDescription
                 desc={
-                    "Use a pre-designed template or personalize with video, stickers, fonts, and more"
+                    "DeepScan 모델은 이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 기술입니다."
                 }
             />
-            <div className="modelContent">content</div>
         </div>
     );
 };
 Model3.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 const Model4 = ({ onClick }) => {
@@ -193,12 +213,12 @@ const Model4 = ({ onClick }) => {
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
                 }
             />
-            <div className="modelContent">content</div>
         </div>
     );
 };
 Model4.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 const Model5 = ({ onClick }) => {
@@ -210,12 +230,12 @@ const Model5 = ({ onClick }) => {
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
                 }
             />
-            <div className="modelContent">content</div>
         </div>
     );
 };
 Model5.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 const Model6 = ({ onClick }) => {
@@ -227,12 +247,12 @@ const Model6 = ({ onClick }) => {
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
                 }
             />
-            <div className="modelContent">content</div>
         </div>
     );
 };
 Model6.propTypes = {
     onClick: PropTypes.func.isRequired,
+    isMobile: PropTypes.bool.isRequired,
 };
 
 export default ModelSection;

@@ -26,6 +26,7 @@ const WelcomeSection = () => {
                 muted
                 autoPlay
                 loop
+                playsInline
             />
             <motion.div
                 className="article"

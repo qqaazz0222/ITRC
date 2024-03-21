@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const NIA_SERVER_URL = "http://210.94.194.83:5001";
+const NIA_SERVER_URL = "http://210.94.194.83:3001";
 const serverCheck = async () => {
     try {
         const response = await axios.get(NIA_SERVER_URL);
@@ -28,11 +28,14 @@ const getVideoList = async () => {
 const getAnalysisVideo = async (video) => {
     try {
         const params = { videoId: video.id };
+        console.log("[NIA SERVICE] Video Analysis Start");
         const response = await axios.get(
             NIA_SERVER_URL + "/service/analysis-video",
             { params }
         );
-        console.log(response);
+        console.log("[NIA SERVICE] Video Analysis Finish");
+        console.log("[NIA SERVICE] Response :", response);
+        console.log("[NIA SERVICE] ResponseData :", response.data);
         if (response.status === 200) {
             return response.data;
         } else {

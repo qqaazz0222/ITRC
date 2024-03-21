@@ -257,7 +257,7 @@ strong {
     flex-direction: column;
     grid-auto-columns: max-content;
     padding-bottom: 5rem;
-    width: 100%;
+    width: calc(100% - 2rem);
     max-width: 960px;
     /* user-select: none; */
 }

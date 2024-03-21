@@ -10,11 +10,12 @@ import DemoLayout from "./layouts/demoLayout/layout";
 // 페이지
 import LandingPage from "./pages/landing/page";
 import ModelPage from "./pages/model/page";
-import { DemoNiaPage } from "./pages/demo/page";
+import DemoNiaPage from "./pages/demo/niaPage";
 import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
 import "./custom.css";
+import DemoRobustPage from "./pages/demo/robustPage";
 
 const router = createBrowserRouter([
     {
@@ -51,11 +52,11 @@ const router = createBrowserRouter([
                 element: <DemoNiaPage />,
             },
             {
-                path: "/model/2",
-                element: <></>,
+                path: "/demo/robustqa",
+                element: <DemoRobustPage />,
             },
             {
-                path: "/model/3",
+                path: "/demo/deepscan",
                 element: <></>,
             },
         ],

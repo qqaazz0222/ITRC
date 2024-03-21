@@ -36,6 +36,7 @@ const LandingPage = () => {
             themeHandler(currentTheme);
         }
         if (modelSectionInView) {
+            console.log("3번 섹션 보이는중");
             section1.style.opacity = 0;
             themeHandler("white");
         }

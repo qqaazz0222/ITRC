@@ -31,7 +31,7 @@ const fadeInVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.8,
+            duration: 1.5,
             delay: 0.2,
         },
     },
@@ -73,15 +73,16 @@ const ModelPage = ({ project }) => {
         <div id="modelNiaPage" className="page modelPage">
             <div className="titleSection" ref={videoRef}>
                 <motion.video
+                    src={Model_1_1}
                     style={{
                         opacity: opacity1,
                         scale: scale1,
                         top: top1,
                     }}
-                    src={Model_1_1}
                     muted
                     autoPlay
                     loop
+                    playsInline
                 ></motion.video>
                 <motion.div
                     className="article"
