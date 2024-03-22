@@ -1,4 +1,4 @@
-const littlePrince = `
+export const littlePrince = `
 THE LITTLE PRINCE 
 
 Antoine De Saint-Exupery 
@@ -1281,4 +1281,972 @@ day to the African desert. And, if you should come upon this spot, please do not
 a time, exactly under the star. Then, if a little man appears who laughs, who has golden hair and 
 who refuses to answer questions, you will know who he is. If this should happen, please comfort 
 me. Send me word that he has come back. 
+`;
+
+export const snowWhite = `
+Snow White and the Seven Dwarfs
+
+Once upon a time in the middle of winter, when the flakes of
+snow were falling like feathers from the sky, a queen sat at
+a window sewing, and the frame of the window was made of black
+ebony.  And whilst she was sewing and looking out of the window
+at the snow, she pricked her finger with the needle, and three
+drops of blood fell upon the snow.  And the red looked pretty
+upon the white snow, and she thought to herself, would that I had
+a child as white as snow, as red as blood, and as black as the
+wood of the window-frame.
+
+Soon after that she had a little daughter, who was as white as
+snow, and as red as blood, and her hair was as black as ebony,
+and she was therefore called little snow-white.  And when the
+child was born, the queen died.
+
+After a year had passed the king took to himself another wife.
+She was a beautiful woman, but proud and haughty, and she could
+not bear that anyone else chould surpass her in beauty.  She
+had a wonderful looking-glass, and when she stood in front of it
+and looked at herself in it, and said,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+The looking-glass answered,
+thou, o queen, art the fairest of all.
+
+Then she was satisfied, for she knew that the looking-glass spoke
+the truth.
+
+But snow-white was growing up, and grew more and more beautiful,
+and when she was seven years old she was as beautiful as the day,
+and more beautiful than the queen herself.  And once when the
+queen asked her looking-glass,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+It answered,
+thou art fairer than all who are here, lady queen.
+But more beautiful still is snow-white, as I ween.
+
+Then the queen was shocked, and turned yellow and green with
+envy.  From that hour, whenever she looked at snow-white, her
+heart heaved in her breast, she hated the girl so much.
+And envy and pride grew higher and higher in her heart like a
+weed, so that she had no peace day or night.  She called a
+huntsman, and said, take the child away into the forest.  I will
+no longer have her in my sight.  Kill her, and bring me back her
+lung and liver as a token.  The huntsman obeyed, and took her away
+but when he had drawn his knife, and was about to pierce
+snow-white's innocent heart, she began to weep, and said, ah dear
+huntsman, leave me my life.  I will run away into the wild forest,
+and never come home again.
+
+And as she was so beautiful the huntsman had pity on her and
+said, run away, then, you poor child.  The wild beasts will soon
+have devoured you, thought he, and yet it seemed as if a stone had
+been rolled from his heart since it was no longer needful for
+him to kill her.  And as a young bear just then came running by
+he stabbed it, and cut out its lung and liver and took them to the
+queen as proof that the child was dead.  The cook had to salt them,
+and the wicked queen ate them, and thought she had eaten the lung
+and liver of snow-white.
+
+But now the poor child was all alone in the great forest, and so
+terrified that she looked at all the leaves on the trees, and did
+not know what to do.  Then she began to run, and ran over sharp
+stones and through thorns, and the wild beasts ran past her, but
+did her no harm.
+
+She ran as long as her feet would go until it was almost evening,
+then she saw a little cottage and went into it to rest herself.
+Everything in the cottage was small, but neater and cleaner than
+can be told.  There was a table on which was a white cover, and
+seven little plates, and on each plate a little spoon, moreover,
+there were seven little knives and forks, and seven little mugs.
+Against the wall stood seven little beds side by side, and
+covered with snow-white counterpanes.
+
+Little snow-white was so hungry and thirsty that she ate some
+vegetables and bread from each plate and drank a drop of wine
+out of each mug, for she did not wish to take all from one only.
+Then, as she was so tired, she laid herself down on one of the
+little beds, but none of them suited her, one was too long,
+another too short, but at last she found that the seventh one was
+right, and so she remained in it, said a prayer and went to
+sleep.
+
+When it was quite dark the owners of the cottage came back.
+They were seven dwarfs who dug and delved in the mountains for
+ore.  They lit their seven candles, and as it was now light within
+the cottage they saw that someone had been there, for everything
+was not in the same order in which they had left it.
+
+The first said, who has been sitting on my chair.
+The second, who has been eating off my plate.
+The third, who has been taking some of my bread.
+The fourth, who has been eating my vegetables.
+The fifth, who has been using my fork.
+The sixth, who has been cutting with my knife.
+The seventh, who has been drinking out of my mug.
+
+Then the first looked round and saw that there was a little
+hollow on his bed, and he said, who has been getting into my
+bed.  The others came up and each called out, somebody has been
+lying in my bed too.  But the seventh when he looked at his bed
+saw little snow-white, who was lying asleep therein.  And he
+called the others, who came running up, and they cried out with
+astonishment, and brought their seven little candles and let the
+light fall on little snow-white.  Oh, heavens, oh, heavens, cried
+they, what a lovely child.  And they were so glad that they did
+not wake her up, but let her sleep on in the bed.  And the
+seventh dwarf slept with his companions, one hour with each, and
+so passed the night.
+
+When it was morning little snow-white awoke, and was frightened
+when she saw the seven dwarfs.  But they were friendly and asked
+her what her name was.  My name is snow-white, she answered.
+How have you come to our house, said the dwarfs.  Then she told
+them that her step-mother had wished to have her killed, but
+that the huntsman had spared her life, and that she had run for
+the whole day, until at last she had found their dwelling.
+
+The dwarfs said, if you will take care of our house, cook, make
+the beds, wash, sew and knit, and if you will keep everything neat
+and clean you can stay with us and you shall want for nothing.
+Yes, said snow-white, with all my heart.  And she stayed with
+them.  She kept the house in order for them.  In the mornings
+they went to the mountains and looked for copper and gold, in the
+evenings they came back, and then their supper had to be ready.
+The girl was alone the whole day, so the good dwarfs warned her
+and said, beware of your step-mother, she will soon know that you
+are here, be sure to let no one come in.
+
+But the queen, believing that she had eaten snow-white's lung and
+liver, could not but think that she was again the first and most
+beautiful of all, and she went to her looking-glass and said,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+And the glass answered,
+oh, queen, thou art fairest of all I see,
+but over the hills, where the seven dwarfs dwell,
+snow-white is still alive and well,
+and none is so fair as she.
+
+Then she was astounded, for she knew that the looking-glass
+never spoke falsely, and she knew that the huntsman had betrayed
+her, and that little snow-white was still alive.
+
+And so she thought and thought again how she might kill her,
+for so long as she was not the fairest in the whole land, envy let
+her have no rest.  And when she had at last thought of something
+to do, she painted her face, and dressed herself like an old
+pedlar-woman, and no one could have known her.  In this disguise
+she went over the seven mountains to the seven dwarfs, and
+knocked at the door and cried, pretty things to sell, very cheap,
+very cheap.  Little snow-white looked out of the window and called
+out, good-day my good woman, what have you to sell.  Good things,
+pretty things, she answered, stay-laces of all colors, and she
+pulled out one which was woven of bright-colored silk.  I may let
+the worthy old woman in, thought snow-white, and she unbolted the
+door and bought the pretty laces.  Child, said the old woman,
+what a fright you look, come, I will lace you properly for once.
+Snow-white had no suspicion, but stood before her, and let herself
+be laced with the new laces.  But the old woman laced so quickly
+and so tightly that snow-white lost her breath and fell down as
+if dead.  Now I am the most beautiful, said the queen to herself,
+and ran away.
+
+Not long afterwards, in the evening, the seven dwarfs came home,
+but how shocked they were when they saw their dear little snow-white
+lying on the ground, and that she neither stirred nor
+moved, and seemed to be dead.  They lifted her up, and, as they
+saw that she was laced too tightly, they cut the laces, then she
+began to breathe a little, and after a while came to life again.
+When the dwarfs heard what had happened they said, the old
+pedlar-woman was no one
+else than the wicked queen, take care and let no one come in
+when we are not with you.
+
+But the wicked woman when she had reached home went in front
+of the glass and asked,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+And it answered as before,
+oh, queen, thou art fairest of all I see,
+but over the hills, where the seven dwarfs dwell,
+snow-white is still alive and well,
+and none is so fair as she.
+
+When she heard that, all her blood rushed to her heart with fear,
+for she saw plainly that little snow-white was again alive.
+But now, she said, I will think of something that shall really
+put an end to you.  And by the help of witchcraft, which she
+understood, she made a poisonous comb.  Then she disguised
+herself and took the shape of another old woman.  So she went
+over the seven mountains to the seven dwarfs, knocked at the
+door, and cried, good things to sell, cheap, cheap.  Little
+snow-white looked out and said, go away, I cannot let anyone come
+in.  I suppose you can look, said the old woman, and pulled the
+poisonous comb out and held it up.  It pleased the girl so well
+that she let herself be beguiled, and opened the door.  When they
+had made a bargain the old woman said, now I will comb you
+properly for once.  Poor little snow-white had no suspicion, and
+let the old woman do as she pleased, but hardly had she put the
+comb in her hair than the poison in it took effect, and the girl
+fell down senseless.  You paragon of beauty, said the wicked
+woman, you are done for now, and she went away.
+
+But fortunately it was almost evening, when the seven dwarfs
+came home.  When they saw snow-white lying as if dead upon the
+ground they at once suspected the step-mother, and they looked
+and found the poisoned comb.  Scarcely had they taken it out when
+snow-white came to herself, and told them what had happened.
+Then they warned her once more to be upon her guard and to open
+the door to no one.
+
+The queen, at home, went in front of the glass and said,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+Then it answered as before,
+oh, queen, thou art fairest of all I see,
+but over the hills, where the seven dwarfs dwell,
+snow-white is still alive and well,
+and none is so fair as she.
+
+When she heard the glass speak thus she trembled and shook
+with rage.  Snow-white shall die, she cried, even if it costs me
+my life.
+
+Thereupon she went into a quite secret, lonely room, where no
+one ever came, and there she made a very poisonous apple.
+Outside it looked pretty, white with a red cheek, so that
+everyone who saw it longed for it, but whoever ate a piece of it
+must surely die.
+
+When the apple was ready she painted her face, and dressed herself
+up as a farmer's wife, and so she went over the seven
+mountains to the seven dwarfs.  She knocked at the door.  Snow-white
+put her head out of the window and said, I cannot let
+anyone in, the seven dwarfs have forbidden me.  It is all the
+same to me, answered the woman, I shall soon get rid of my apples.
+There, I will give you one.
+
+No, said snow-white, I dare not take anything.  Are you afraid
+of poison, said the old woman, look, I will cut the apple in two
+pieces, you eat the red cheek, and I will eat the white.  The
+apple was so cunningly made that only the red cheek was
+poisoned.  Snow-white longed for the fine apple, and when she saw
+that the woman ate part of it she could resist no longer, and
+stretched out
+her hand and took the poisonous half.  But hardly had she a bit
+of it in her mouth than she fell down dead.  Then the queen
+looked at her with a dreadful look, and laughed aloud and said,
+white as snow, red as blood, black as ebony-wood, this time the
+dwarfs cannot wake you up again.
+
+And when she asked of the looking-glass at home,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+And it answered at last,
+oh, queen, in this land thou art fairest of all.
+Then her envious heart had rest, so far as an envious heart can
+have rest.
+
+The dwarfs, when they came home in the evening, found snow-white
+lying upon the ground, she breathed no longer and was dead.
+They lifted her up, looked to see whether they could find
+anything poisonous, unlaced her, combed her hair, washed her
+with water and wine, but it was all of no use, the poor child was
+dead, and remained dead.  They laid her upon a bier, and all
+seven of them sat round it and wept for her, and wept three days
+long.
+
+Then they were going to bury her, but she still looked as if she
+were living, and still had her pretty red cheeks.  They said,
+we could not bury her in the dark ground, and they had a
+transparent coffin of glass made, so that she could be seen from
+all sides, and they laid her in it, and wrote her name upon it
+in golden letters, and that she was a king's daughter.  Then they
+put the coffin out upon the mountain, and one of them always
+stayed by it and watched it.  And birds came too, and wept for
+snow-white, first an owl, then a raven, and last a dove.
+
+And now snow-white lay a long, long time in the coffin, and she
+did not change, but looked as if she were asleep, for she was as
+white as snow, as red as blood, and her hair was as black as
+ebony.
+
+It happened, however, that a king's son came into the forest, and
+went to the dwarfs, house to spend the night.  He saw the coffin
+on the mountain, and the beautiful snow-white within it, and read
+what was written upon it in golden letters.  Then he said to the
+dwarfs, let me have the coffin, I will give you whatever you want
+for it.  But the dwarfs answered, we will not part with it for all
+the gold in the world.  Then he said, let me have it as a gift, for
+I cannot live without seeing snow-white.  I will honor and prize
+her as my dearest possession.  As he spoke in this way the good
+dwarfs took pity upon him, and gave him the coffin.
+
+And now the king's son had it carried away by his servants on
+their shoulders.  And it happened that they stumbled over a
+tree-stump, and with the shock the poisonous piece of apple
+which snow-white had bitten off came out of her throat.  And
+before long she opened her eyes, lifted up the lid of the coffin,
+sat up, and was
+once more alive.  Oh, heavens, where am I, she cried.  The king's
+son, full of joy, said, you are with me.  And told her what had
+happened, and said, I love you more than everything in the
+world, come with me to my father's palace, you shall be my wife.
+
+And snow-white was willing, and went with him, and their wedding
+was held with great show and splendor.  But snow-white's
+wicked step-mother was also bidden to the feast.  When she had
+arrayed herself in beautiful clothes she went before the
+looking-glass, and said,
+looking-glass, looking-glass, on the wall,
+who in this land is the fairest of all.
+
+The glass answered,
+oh, queen, of all here the fairest art thou,
+but the young queen is fairer by far as I trow.
+
+Then the wicked woman uttered a curse, and was so wretched,
+so utterly wretched that she knew not what to do.  At first she
+would not go to the wedding at all, but she had no peace, and
+had to go to see the young queen.  And when she went in she
+recognized snow-white, and she stood still with rage and fear,
+and could not stir.  But iron slippers had already been put upon
+the fire, and they were brought in with tongs, and set before
+her.  Then she was forced to put on the red-hot shoes, and dance
+until she dropped down dead.
+`;
+
+export const hanselAndGretel = `
+Hard by a great forest dwelt a poor wood-cutter with his wife
+and his two children.  The boy was called Hansel and the
+girl Gretel.  He had little to bite and to break, and once when
+great dearth fell on the land, he could no longer procure even daily
+bread.  Now when he thought over this by night in his bed, and
+tossed about in his anxiety, he groaned and said to his wife, what
+is to become of us.  How are we to feed our poor children, when
+we no longer have anything even for ourselves.  I'll tell you what,
+husband, answered the woman, early to-morrow morning we
+will take the children out into the forest to where it is the
+thickest.  There we will light a fire for them, and give each of
+them one more piece of bread, and then we will go to our work and
+leave them alone.  They will not find the way home again, and we
+shall be rid of them.  No, wife, said the man, I will not do that.
+How can I bear to leave my children alone in the forest.   The wild
+animals would soon come and tear them to pieces.  O' you fool, said
+she, then we must all four die of hunger, you may as well plane the
+planks for our coffins, and she left him no peace until he
+consented.  But I feel very sorry for the poor children, all the
+same, said the man.
+
+The two children had also not been able to sleep for hunger, and
+had heard what their step-mother had said to their father.  Gretel
+wept bitter tears, and said to Hansel, now all is over with us.
+Be quiet, Gretel, said Hansel, do not distress yourself, I will soon
+find a way to help us.  And when the old folks had fallen asleep,
+he got up, put on his little coat, opened the door below, and crept
+outside.  The moon shone brightly, and the white pebbles which lay
+in front of the house glittered like real silver pennies.  Hansel
+stooped and stuffed the little pocket of his coat with as many as he
+could get in.  Then he went back and said to Gretel, be comforted,
+dear little sister, and sleep in peace, God will not forsake us, and
+he lay down again in his bed.  When day dawned, but before the
+sun had risen, the woman came and awoke the two children, saying
+get up, you sluggards.  We are going into the forest to fetch
+wood.  She gave each a little piece of bread, and said, there is
+something for your dinner, but do not eat it up before then, for you
+will get nothing else.  Gretel took the bread under her apron, as
+Hansel had the pebbles in his pocket.  Then they all set out
+together on the way to the forest.  When they had walked a short
+time, Hansel stood still and peeped back at the house, and did so
+again and again.  His father said, Hansel, what are you looking at
+there and staying behind for.  Pay attention, and do not forget how
+to use your legs.  Ah, father, said Hansel, I am looking at my
+little white cat, which is sitting  up on the roof, and wants to say
+good-bye to me.  The wife said, fool, that is not your little cat,
+that is the morning sun which is shining on the chimneys.  Hansel,
+however, had not been looking back at the cat, but had been
+constantly throwing one of the white pebble-stones out of his pocket
+on the road.
+
+When they had reached the middle of the forest, the father said,
+now, children, pile up some wood, and I will light a fire that you
+may not be cold.  Hansel and Gretel gathered brushwood together,
+as high as a little hill.  The brushwood was lighted, and when the
+flames were burning very high, the woman said, now, children,
+lay yourselves down by the fire and rest, we will go into the forest
+and cut some wood.  When we have done, we will come back and
+fetch you away.
+
+Hansel and Gretel sat by the fire, and when noon came, each ate
+a little piece of bread, and as they heard the strokes of the
+wood-axe they believed that their father was near.  It was not the
+axe, however, but a branch which he had fastened to a withered tree
+which the wind was blowing backwards and forwards.  And as they had
+been sitting such a long time, their eyes closed with fatigue, and
+they fell fast asleep.  When at last they awoke, it was already dark
+night.  Gretel began to cry and said, how are we to get out of the
+forest now.  But Hansel comforted her and said, just wait a little,
+until the moon has risen, and then we will soon find the way.  And
+when the full moon had risen, Hansel took his little sister by the
+hand, and followed the pebbles which shone like newly-coined silver
+pieces, and showed them the way.
+
+They walked the whole night long, and by break of day came
+once more to their father's house.  They knocked at the door, and
+when the woman opened it and saw that it was Hansel and Gretel,
+she said, you naughty children, why have you slept so long in the
+forest.  We thought you were never coming back at all.  The father,
+however, rejoiced, for it had cut him to the heart to leave them
+behind alone.
+
+Not long afterwards, there was once more great dearth throughout
+the land, and the children heard their mother saying at night to
+their father, everything is eaten again, we have one half loaf left,
+and that is the end.  The children must go, we will take them
+farther into the wood, so that they will not find their way out
+again.  There is no other means of saving ourselves.  The man's
+heart was heavy, and he thought, it would be better for you to share
+the last mouthful with your children.  The woman, however, would
+listen to nothing that he had to say, but scolded and reproached
+him.  He who says a must say b, likewise, and as he had yielded the
+first time, he had to do so a second time also.
+
+The children, however, were still awake and had heard the
+conversation.  When the old folks were asleep, Hansel again got up,
+and wanted to go out and pick up pebbles as he had done before, but
+the woman had locked the door, and Hansel could not get out.
+Nevertheless he comforted his little sister, and said, do not cry,
+Gretel, go to sleep quietly, the good God will help us.
+Early in the morning came the woman, and took the children out of
+their beds.  Their piece of bread was given to them, but it was
+still smaller than the time before.  On the way into the forest
+Hansel crumbled his in his pocket, and often stood still and threw a
+morsel on the ground.  Hansel, why do you stop and look round.
+Said the father, go on.  I am looking back at my little pigeon
+which is sitting on the roof, and wants to say good-bye to me,
+answered Hansel.  Fool.  Said the woman, that is not your little
+pigeon, that is the morning sun that is shining on the chimney.
+Hansel, however, little by little, threw all the crumbs on the path.
+The woman led the children still deeper into the forest, where they
+had never in their lives been before.  Then a great fire was again
+made, and the mother said, just sit there, you children, and when
+you are tired you may sleep a little.  We are going into the forest
+to cut wood, and in the evening when we are done, we will come and
+fetch you away.  When it was noon, Gretel shared her piece of
+bread with Hansel, who had scattered his by the way.  Then they
+fell asleep and evening passed, but no one came to the poor
+children.  They did not awake until it was dark night, and Hansel
+comforted his little sister and said, just wait, Gretel, until the
+moon rises, and then we shall see the crumbs of bread which I have
+strewn about, they will show us our way home again.  When the moon
+came they set out, but they found no crumbs, for the many thousands
+of birds which fly about in the woods and fields had picked them all
+up.  Hansel said to Gretel, we shall soon find the way, but they did
+not find it.  They walked the whole night and all the next day too
+from morning till evening, but they did not get out of the forest,
+and were very hungry, for they had nothing to eat but two or three
+berries, which grew on the ground.  And as they were so weary that
+their legs would carry them no longer, they lay down beneath a tree
+and fell asleep.
+
+It was now three mornings since they had left their father's house.
+They began to walk again, but they always came deeper into the
+forest, and if help did not come soon, they must die of hunger and
+weariness.  When it was mid-day, they saw a beautiful snow-white
+bird sitting on a bough, which sang so delightfully that they stood
+still and listened to it.  And when its song was over, it spread its
+wings and flew away before them, and they followed it until they
+reached a little house, on the roof of which it alighted.  And when
+they approached the little house they saw that it was built of
+bread and covered with cakes, but that the windows were of clear
+sugar.  We will set to work on that, said Hansel, and have a good
+meal.  I will eat a bit of the roof, and you Gretel, can eat some
+of the window, it will taste sweet.  Hansel reached up above, and
+broke off a little of the roof to try how it tasted, and Gretel
+leant against the window and nibbled at the panes.  Then a soft
+voice cried from the parlor -
+nibble, nibble, gnaw
+who is nibbling at my little house.
+The children answered -
+the wind, the wind,
+the heaven-born wind,
+and went on eating without disturbing themselves.  Hansel, who
+liked the taste of the roof, tore down a great piece of it, and
+Gretel pushed out the whole of one round window-pane, sat down, and
+enjoyed herself with it.  Suddenly the door opened, and a woman
+as old as the hills, who supported herself on crutches, came
+creeping out.  Hansel and Gretel were so terribly frightened that
+they let fall what they had in their hands. The old woman, however,
+nodded her head, and said, oh, you dear children, who has brought
+you here.  Do come in, and stay with me.  No harm shall happen to
+you.  She took them both by the hand, and led them into her little
+house.  Then good food was set before them, milk and pancakes,
+with sugar, apples, and nuts.  Afterwards two pretty little beds
+were covered with clean white linen, and Hansel and Gretel lay down
+in them, and thought they were in heaven.
+
+The old woman had only pretended to be so kind.  She was in reality
+a wicked witch, who lay in wait for children, and had only built the
+little house of bread in order to entice them there.  When a child
+fell into her power, she killed it, cooked and ate it, and that
+was a feast day with her.  Witches have red eyes, and cannot see
+far, but they have a keen scent like the beasts, and are aware when
+human beings draw near.  When Hansel and Gretel came into her
+neighborhood, she laughed with malice, and said mockingly, I have
+them, they shall not escape me again.  Early in the morning before
+the children were awake, she was already up, and when she saw both
+of them sleeping and looking so pretty, with their plump and rosy
+cheeks, she muttered to herself, that will be a dainty mouthful.
+
+Then she seized Hansel with her shrivelled hand, carried
+him into a little stable, and locked him in behind a grated door.
+Scream as he might, it would not help him.  Then she went to
+Gretel, shook her till she awoke, and cried, get up, lazy thing,
+fetch some water, and cook something good for your brother, he is
+in the stable outside, and is to be made fat.  When he is fat, I
+will eat him.  Gretel began to weep bitterly, but it was all in
+vain, for she was forced to do what the wicked witch commanded.
+And now the best food was cooked for poor Hansel, but Gretel
+got nothing but crab-shells.  Every morning the woman crept to the
+little stable, and cried, Hansel, stretch out your finger that I may
+feel if you will soon be fat.  Hansel, however, stretched out a
+little bone to her, and the old woman, who had dim eyes, could not
+see it, and thought it was Hansel's finger, and was astonished that
+there was no way of fattening him.  When four weeks had gone by,
+and Hansel still remained thin, she was seized with impatience and
+would not wait any longer.  Now, then, Gretel, she cried to the
+girl, stir yourself, and bring some water.  Let Hansel be fat or
+lean, to-morrow I will kill him, and cook him.  Ah, how the poor
+little sister did lament when she had to fetch the water, and how
+her tears did flow down her cheeks.  Dear God, do help us, she
+cried.  If the wild beasts in the forest had but devoured us, we
+should at any rate have died together.  Just keep your noise to
+yourself, said the old woman, it won't help you at all.
+
+Early in the morning, Gretel had to go out and hang up the
+cauldron with the water, and light the fire.  We will bake first,
+said the old woman, I have already heated the oven, and kneaded
+the dough.  She pushed poor Gretel out to the oven, from which
+flames of fire were already darting.  Creep in, said the witch,
+and see if it properly heated, so that we can put the bread in.
+And once Gretel was inside, she intended to shut the oven and let
+her bake in it, and then she would eat her, too.  But Gretel saw
+what she had in mind, and said, I do not know how I am to do it.
+How do I get in.  Silly goose, said the old woman, the door is big
+enough.  Just look, I can get in myself, and she crept up and
+thrust her head into the oven.  Then Gretel gave her a push that
+drove her far into it, and shut the iron door, and fastened the
+bolt.  Oh.  Then she began to howl quite horribly, but Gretel ran
+away, and the godless witch was miserably burnt to death.
+Gretel, however, ran like lightning to Hansel, opened his little
+stable, and cried, Hansel, we are saved.  The old witch is dead.
+Then Hansel sprang like a bird from its cage when the door is
+opened.  How they did rejoice and embrace each other, and dance
+about and kiss each other.  And as they had no longer any need to
+fear her, they went into the witch's house, and in every corner
+there stood chests full of pearls and jewels.  These are far better
+than pebbles. Said Hansel, and thrust into his pockets whatever
+could be got in, and Gretel said, I, too, will take something home
+with me, and filled her pinafore full.  But now we must be off, said
+Hansel, that we may get out of the witch's forest.
+
+When they had walked for two hours, they came to a great
+stretch of water.  We cannot cross, said Hansel, I see no
+foot-plank, and no bridge.  And there is also no ferry, answered
+Gretel, but a white duck is swimming there.  If I ask her, she
+will help us over.  Then she cried -
+little duck, little duck, dost thou see,
+Hansel and Gretel are waiting for thee.
+There's never a plank, or bridge in sight,
+take us across on thy back so white.
+The duck came to them, and Hansel seated himself on its back,
+and told his sister to sit by him.  No, replied Gretel, that will be
+too heavy for the little duck.  She shall take us across, one after
+the other.  The good little duck did so, and when they were once
+safely across and had walked for a short time, the forest seemed to
+be more and more familiar to them, and at length they saw from
+afar their father's house.  Then they began to run, rushed into the
+parlor, and threw themselves round their father's neck.  The man
+had not known one happy hour since he had left the children in the
+forest.  The woman, however, was dead.  Gretel emptied her
+pinafore until pearls and precious stones ran about the room, and
+Hansel threw one handful after another out of his pocket to add to
+them.  Then all anxiety was at an end, and they lived together in
+perfect happiness.  My tale is done, there runs a mouse, whosoever
+catches it, may make himself a big fur cap out of it.
+`;
+
+export const rapunzel = `
+There were once a man and a woman who had long in vain
+wished for a child.  At length the woman hoped that God
+was about to grant her desire.  These people had a little
+window at the back of their house from which a splendid garden
+could be seen, which was full of the most beautiful flowers and
+herbs.  It was, however, surrounded by a high wall, and no one
+dared to go into it because it belonged to an enchantress, who had
+great power and was dreaded by all the world.  One day the woman
+was standing by this window and looking down into the garden,
+when she saw a bed which was planted with the most beautiful
+rampion - rapunzel, and it looked so fresh and green that she
+longed for it, and had the greatest desire to eat some.  This desire
+increased every day, and as she knew that she could not get any
+of it, she quite pined away, and began to look pale and miserable.
+Then her husband was alarmed, and asked, what ails you, dear
+wife.  Ah, she replied, if I can't eat some of the rampion, which
+is in the garden behind our house, I shall die.  The man, who loved
+her, thought, sooner than let your wife die, bring her some of
+the rampion yourself, let it cost what it will.  At twilight, he
+clambered down over the wall into the garden of the enchantress,
+hastily clutched a handful of rampion, and took it to his wife.  She
+at once made herself a salad of it, and ate it greedily.  It tasted
+so good to her - so very good, that the next day she longed for it
+three times as much as before.  If he was to have any rest, her
+husband must once more descend into the garden.  In the gloom of
+evening, therefore, he let himself down again.  But when he had
+clambered down the wall he was terribly afraid, for he saw the
+enchantress standing before him.  How can you dare, said she with
+angry look, descend into my garden and steal my rampion like a
+thief.  You shall suffer for it.  Ah, answered he, let mercy take
+the place of justice, I only made up my mind to do it out of
+necessity.  My wife saw your rampion from the window, and felt such
+a longing for it that she would have died if she had not got some
+to eat.  Then the enchantress allowed her anger to be softened, and
+said to him, if the case be as you say, I will allow you to take
+away with you as much rampion as you will, only I make one
+condition, you must give me the child which your wife will bring
+into the world.  It shall be well treated, and I will care for it
+like a mother.  The man in his terror consented to everything, and
+when the woman was brought to bed, the enchantress appeared at once,
+gave the child the name of rapunzel, and took it away with her.
+Rapunzel grew into the most beautiful child under the sun.
+When she was twelve years old, the enchantress shut her into a
+tower, which lay in a forest, and had neither stairs nor door, but
+quite at the top was a little window.  When the enchantress
+wanted to go in, she placed herself beneath it and cried,
+rapunzel, rapunzel,
+let down your hair to me.
+Rapunzel had magnificent long hair, fine as spun gold, and when
+she heard the voice of the enchantress she unfastened her braided
+tresses, wound them round one of the hooks of the window above,
+and then the hair fell twenty ells down, and the enchantress climbed
+up by it.
+After a year or two, it came to pass that the king's son rode
+through the forest and passed by the tower.  Then he heard a song,
+which was so charming that he stood still and listened.  This was
+rapunzel, who in her solitude passed her time in letting her sweet
+voice resound.  The king's son wanted to climb up to her, and
+looked for the door of the tower, but none was to be found.  He
+rode home, but the singing had so deeply touched his heart, that
+every day he went out into the forest and listened to it.  Once when
+he was thus standing behind a tree, he saw that an enchantress
+came there, and he heard how she cried,
+rapunzel, rapunzel,
+let down your hair.
+Then rapunzel let down the braids of her hair, and the
+enchantress climbed up to her.  If that is the ladder by which one
+mounts, I too will try my fortune, said he, and the next day when
+it began to grow dark, he went to the tower and cried,
+rapunzel, rapunzel,
+let down your hair.
+Immediately the hair fell down and the king's son climbed up.
+At first rapunzel was terribly frightened when a man, such as
+her eyes had never yet beheld, came to her.  But the king's son
+began to talk to her quite like a friend, and told her that his
+heart had been so stirred that it had let him have no rest, and he
+had been forced to see her.  Then rapunzel lost her fear, and when
+he asked her if she would take him for her husband, and she saw that
+he was young and handsome, she thought, he will love me more than
+old dame gothel does.  And she said yes, and laid her hand in his.
+She said, I will willingly go away with you, but I do not know
+how to get down.  Bring with you a skein of silk every time that
+you come, and I will weave a ladder with it, and when that is ready
+I will descend, and you will take me on your horse.  They agreed
+that until that time he should come to her every evening, for the
+old woman came by day.  The enchantress remarked nothing of
+this, until once rapunzel said to her, tell me, dame gothel, how
+it happens that you are so much heavier for me to draw up than
+the young king's son - he is with me in a moment.  Ah. You
+wicked child, cried the enchantress.  What do I hear you say.  I
+thought I had separated you from all the world, and yet you have
+deceived me.  In her anger she clutched rapunzel's beautiful
+tresses, wrapped them twice round her left hand, seized a pair of
+scissors with the right, and snip, snap, they were cut off, and the
+lovely braids lay on the ground.  And she was so pitiless that she
+took poor rapunzel into a desert where she had to live in great
+grief and misery.
+On the same day that she cast out rapunzel, however, the
+enchantress fastened the braids of hair, which she had cut off, to
+the hook of the window, and when the king's son came and cried,
+rapunzel, rapunzel,
+let down your hair,
+she let the hair down.  The king's son ascended, but instead of
+finding his dearest rapunzel, he found the enchantress, who gazed
+at him with wicked and venomous looks.  Aha, she cried mockingly,
+you would fetch your dearest, but the beautiful bird sits
+no longer singing in the nest.  The cat has got it, and will scratch
+out your eyes as well.  Rapunzel is lost to you.  You will never see
+her again.  The king's son was beside himself with pain, and in
+his despair he leapt down from the tower.  He escaped with his life,
+but the thorns into which he fell pierced his eyes.  Then he
+wandered quite blind about the forest, ate nothing but roots and
+berries, and did naught but lament and weep over the loss of his
+dearest wife.  Thus he roamed about in misery for some years, and at
+length came to the desert where rapunzel, with the twins to which
+she had given birth, a boy and a girl, lived in wretchedness.  He
+heard a voice, and it seemed so familiar to him that he went towards
+it, and when he approached, rapunzel knew him and fell on his neck
+and wept.  Two of her tears wetted his eyes and they grew clear
+again, and he could see with them as before.  He led her to his
+kingdom where he was joyfully received, and they lived for a long
+time afterwards, happy and contented.
+`;
+
+export const cinderella = `
+Cinderella
+The wife of a rich man fell sick, and as she felt that her end
+was drawing near, she called her only daughter to her bedside and
+said, dear child, be good and pious, and then the
+good God will always protect you, and I will look down on you
+from heaven and be near you.  Thereupon she closed her eyes and
+departed.  Every day the maiden went out to her mother's grave,
+and wept, and she remained pious and good.  When winter came
+the snow spread a white sheet over the grave, and by the time the
+spring sun had drawn it off again, the man had taken another wife.
+The woman had brought with her into the house two daughters,
+who were beautiful and fair of face, but vile and black of heart.
+Now began a bad time for the poor step-child.  Is the stupid goose
+to sit in the parlor with us, they said.  He who wants to eat bread
+must earn it.  Out with the kitchen-wench.  They took her pretty
+clothes away from her, put an old grey bedgown on her, and gave
+her wooden shoes.  Just look at the proud princess, how decked
+out she is, they cried, and laughed, and led her into the kitchen.
+There she had to do hard work from morning till night, get up
+before daybreak, carry water, light fires, cook and wash.  Besides
+this, the sisters did her every imaginable injury - they mocked her
+and emptied her peas and lentils into the ashes, so that she was
+forced to sit and pick them out again.  In the evening when she had
+worked till she was weary she had no bed to go to, but had to sleep
+by the hearth in the cinders.  And as on that account she always
+looked dusty and dirty, they called her cinderella.
+It happened that the father was once going to the fair, and he
+asked his two step-daughters what he should bring back for them.
+Beautiful dresses, said one, pearls and jewels, said the second.
+And you, cinderella, said he, what will you have.  Father
+break off for me the first branch which knocks against your hat on
+your way home.  So he bought beautiful dresses, pearls and jewels
+for his two step-daughters, and on his way home, as he was riding
+through a green thicket, a hazel twig brushed against him and
+knocked off his hat.  Then he broke off the branch and took it with
+him.  When he reached home he gave his step-daughters the things
+which they had wished for, and to cinderella he gave the branch
+from the hazel-bush.  Cinderella thanked him, went to her mother's
+grave and planted the branch on it, and wept so much that the tears
+fell down on it and watered it.  And it grew and became a handsome
+tree. Thrice a day cinderella went and sat beneath it, and wept and
+prayed, and a little white bird always came on the tree, and if
+cinderella expressed a wish, the bird threw down to her what she
+had wished for.
+It happened, however, that the king gave orders for a festival
+which was to last three days, and to which all the beautiful young
+girls in the country were invited, in order that his son might choose
+himself a bride.  When the two step-sisters heard that they too were
+to appear among the number, they were delighted, called cinderella
+and said, comb our hair for us, brush our shoes and fasten our
+buckles, for we are going to the wedding at the king's palace.
+Cinderella obeyed, but wept, because she too would have liked to
+go with them to the dance, and begged her step-mother to allow
+her to do so.  You go, cinderella, said she, covered in dust and
+dirt as you are, and would go to the festival.  You have no clothes
+and shoes, and yet would dance.  As, however, cinderella went on
+asking, the step-mother said at last, I have emptied a dish of
+lentils into the ashes for you, if you have picked them out again in
+two hours, you shall go with us.  The maiden went through the
+back-door into the garden, and called, you tame pigeons, you
+turtle-doves, and all you birds beneath the sky, come and help me
+to pick
+the good into the pot,
+the bad into the crop.
+Then two white pigeons came in by the kitchen window, and
+afterwards the turtle-doves, and at last all the birds beneath the
+sky, came whirring and crowding in, and alighted amongst the ashes.
+And the pigeons nodded with their heads and began pick, pick,
+pick, pick, and the rest began also pick, pick, pick, pick, and
+gathered all the good grains into the dish.  Hardly had one hour
+passed before they had finished, and all flew out again.  Then the
+girl took the dish to her step-mother, and was glad, and believed
+that now she would be allowed to go with them to the festival.
+But the step-mother said, no, cinderella, you have no clothes and
+you can not dance.  You would only be laughed at.  And as
+cinderella wept at this, the step-mother said, if you can pick two
+dishes of lentils out of the ashes for me in one hour, you shall go
+with us.  And she thought to herself, that she most certainly
+cannot do again.  When the step-mother had emptied the two
+dishes of lentils amongst the ashes, the maiden went through the
+back-door into the garden and cried, you tame pigeons, you
+turtle-doves, and all you birds beneath the sky, come and help me
+to pick
+the good into the pot,
+the bad into the crop.
+Then two white pigeons came in by the kitchen-window, and
+afterwards the turtle-doves, and at length all the birds beneath the
+sky, came whirring and crowding in, and alighted amongst the
+ashes.  And the doves nodded with their heads and began pick,
+pick, pick, pick, and the others began also pick, pick, pick, pick,
+and gathered all the good seeds into the dishes, and before half an
+hour was over they had already finished, and all flew out again.
+Then the maiden was delighted, and believed that she might now go
+with them to the wedding.  But the step-mother said, all this will
+not help.  You cannot go with us, for you have no clothes and can
+not dance.  We should be ashamed of you.  On this she turned her
+back on cinderella, and hurried away with her two proud daughters.
+As no one was now at home, cinderella went to her mother's
+grave beneath the hazel-tree, and cried -
+shiver and quiver, little tree,
+silver and gold throw down over me.
+Then the bird threw a gold and silver dress down to her, and
+slippers embroidered with silk and silver.  She put on the dress
+with all speed, and went to the wedding.  Her step-sisters and the
+step-mother however did not know her, and thought she must be a
+foreign princess, for she looked so beautiful in the golden dress.
+They never once thought of cinderella, and believed that she was
+sitting at home in the dirt, picking lentils out of the ashes.  The
+prince approached her, took her by the hand and danced with her.
+He would dance with no other maiden, and never let loose of her
+hand, and if any one else came to invite her, he said, this is my
+partner.
+She danced till it was evening, and then she wanted to go home.
+But the king's son said, I will go with you and bear you company,
+for he wished to see to whom the beautiful maiden belonged.
+She escaped from him, however, and sprang into the
+pigeon-house.  The king's son waited until her father came, and
+then he told him that the unknown maiden had leapt into the
+pigeon-house.  The old man thought, can it be cinderella.  And
+they had to bring him an axe and a pickaxe that he might hew
+the pigeon-house to pieces, but no one was inside it.  And when they
+got home cinderella lay in her dirty clothes among the ashes, and
+a dim little oil-lamp was burning on the mantle-piece, for
+cinderella had jumped quickly down from the back of the pigeon-house
+and had run to the little hazel-tree, and there she had taken off
+her beautiful clothes and laid them on the grave, and the bird had
+taken them away again, and then she had seated herself in the
+kitchen amongst the ashes in her grey gown.
+Next day when the festival began afresh, and her parents and
+the step-sisters had gone once more, cinderella went to the
+hazel-tree and said -
+shiver and quiver, my little tree,
+silver and gold throw down over me.
+Then the bird threw down a much more beautiful dress than on
+the preceding day. And when cinderella appeared at the wedding
+in this dress, every one was astonished at her beauty.  The king's
+son had waited until she came, and instantly took her by the hand
+and danced with no one but her.  When others came and invited
+her, he said, this is my partner.  When evening came she wished
+to leave, and the king's son followed her and wanted to see into
+which house she went.  But she sprang away from him, and into
+the garden behind the house.  Therein stood a beautiful tall tree on
+which hung the most magnificent pears.  She clambered so nimbly
+between the branches like a squirrel that the king's son did not
+know where she was gone.  He waited until her father came, and
+said to him, the unknown maiden has escaped from me, and I
+believe she has climbed up the pear-tree.  The father thought,
+can it be cinderella.  And had an axe brought and cut the
+tree down, but no one was on it.  And when they got into the
+kitchen, cinderella lay there among the ashes, as usual, for she
+had jumped down on the other side of the tree, had taken the
+beautiful dress to the bird on the little hazel-tree, and put on her
+grey gown.
+On the third day, when the parents and sisters had gone away,
+cinderella went once more to her mother's grave and said to the
+little tree -
+shiver and quiver, my little tree,
+silver and gold throw down over me.
+And now the bird threw down to her a dress which was more
+splendid and magnificent than any she had yet had, and the
+slippers were golden.  And when she went to the festival in the
+dress, no one knew how to speak for astonishment.  The king's son
+danced with her only, and if any one invited her to dance, he said
+this is my partner.
+When evening came, cinderella wished to leave, and the king's
+son was anxious to go with her, but she escaped from him so quickly
+that he could not follow her.  The king's son, however, had
+employed a ruse, and had caused the whole staircase to be smeared
+with pitch, and there, when she ran down, had the maiden's left
+slipper remained stuck.  The king's son picked it up, and it was
+small and dainty, and all golden.  Next morning, he went with it to
+the father, and said to him, no one shall be my wife but she whose
+foot this golden slipper fits.  Then were the two sisters glad,
+for they had pretty feet.  The eldest went with the shoe into her
+room and wanted to try it on, and her mother stood by.  But she
+could not get her big toe into it, and the shoe was too small for
+her.  Then her mother gave her a knife and said, cut the toe off,
+when you are queen you will have no more need to go on foot.  The
+maiden cut the toe off, forced the foot into the shoe, swallowed
+the pain, and went out to the king's son.  Then he took her on his
+his horse as his bride and rode away with her.  They were
+obliged, however, to pass the grave, and there, on the hazel-tree,
+sat the two pigeons and cried -
+turn and peep, turn and peep,
+there's blood within the shoe,
+the shoe it is too small for her,
+the true bride waits for you.
+Then he looked at her foot and saw how the blood was trickling
+from it.  He turned his horse round and took the false bride
+home again, and said she was not the true one, and that the
+other sister was to put the shoe on.  Then this one went into her
+chamber and got her toes safely into the shoe, but her heel was
+too large.  So her mother gave her a knife and said,  cut a bit
+off your heel, when you are queen you will have no more need
+to go on foot.  The maiden cut a bit off her heel, forced
+her foot into the shoe, swallowed the pain, and went out to the
+king's son.  He took her on his horse as his bride, and rode away
+with her, but when they passed by the hazel-tree, the two pigeons
+sat on it and cried -
+turn and peep, turn and peep,
+there's blood within the shoe,
+the shoe it is too small for her,
+the true bride waits for you.
+He looked down at her foot and saw how the blood was running
+out of her shoe, and how it had stained her white stocking quite
+red.  Then he turned his horse and took the false bride home
+again.  This also is not the right one, said he, have you no
+other daughter.  No, said the man, there is still a little
+stunted kitchen-wench which my late wife left behind her, but
+she cannot possibly be the bride.  The king's son said he was
+to send her up to him, but the mother answered, oh, no, she is
+much too dirty, she cannot show herself.  But he absolutely
+insisted on it, and cinderella had to be called.  She first
+washed her hands and face clean, and then went and bowed down
+before the king's son, who gave her the golden shoe.  Then she
+seated herself on a stool, drew her foot out of the heavy
+wooden shoe, and put it into the slipper, which fitted like a
+glove.  And when she rose up and the king's son looked at her
+face he recognized the beautiful maiden who had danced with
+him and cried, that is the true bride.  The step-mother and
+the two sisters were horrified and became pale with rage, he,
+however, took cinderella on his horse and rode away with her.  As
+they passed by the hazel-tree, the two white doves cried -
+turn and peep, turn and peep,
+no blood is in the shoe,
+the shoe is not too small for her,
+the true bride rides with you,
+and when they had cried that, the two came flying down and
+placed themselves on cinderella's shoulders, one on the right,
+the other on the left, and remained sitting there.
+When the wedding with the king's son was to be celebrated, the
+two false sisters came and wanted to get into favor with
+cinderella and share her good fortune.  When the betrothed
+couple went to church, the elder was at the right side and the
+younger at the left, and the pigeons pecked out one eye from
+each of them.  Afterwards as they came back the elder was at
+the left, and the younger at the right, and then the pigeons
+pecked out the other eye from each.  And thus, for their
+wickedness and falsehood, they were punished with blindness
+all their days.
 `;

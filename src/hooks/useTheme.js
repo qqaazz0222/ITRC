@@ -18,6 +18,21 @@ const useTheme = (theme) => {
     } else if (theme === "black") {
         bg = "#111111";
         fg = "#ffffff";
+    } else if (theme === "navy") {
+        bg = "#0F398F";
+        fg = "#FFEA29";
+    } else if (theme === "blue") {
+        bg = "#3F669D";
+        fg = "#E8DD5E";
+    } else if (theme === "deepdreen") {
+        bg = "#505739";
+        fg = "#FFEC86";
+    } else if (theme === "purple") {
+        bg = "#B8569F";
+        fg = "#F8D37A";
+    } else if (theme === "sky") {
+        bg = "#3E589B";
+        fg = "#C5D6E8";
     }
     document.documentElement.style.setProperty(`--background-color`, bg);
     document.documentElement.style.setProperty(`--foreground-color`, fg);
