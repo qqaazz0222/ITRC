@@ -1,6 +1,7 @@
 // 이미지
 import Model_NIA_Structure from "@/assets/images/nia.png";
-import Model_QNA_Structure from "@/assets/images/qna.png";
+import Model_RobustQA_Structure from "@/assets/images/robustqa.png";
+import Model_DeepScan_Structure from "@/assets/images/deepscan.png";
 
 // Project : NIA
 const niaData = {
@@ -133,7 +134,7 @@ const niaData = {
         },
     ],
     structure: {
-        image: Model_QNA_Structure,
+        image: Model_NIA_Structure,
     },
 };
 
@@ -183,7 +184,7 @@ const robustQaData = {
         },
     ],
     structure: {
-        image: Model_NIA_Structure,
+        image: Model_RobustQA_Structure,
     },
 };
 
@@ -237,7 +238,7 @@ const deepScanData = {
         },
     ],
     structure: {
-        image: Model_NIA_Structure,
+        image: Model_DeepScan_Structure,
     },
 };
 
