@@ -1283,7 +1283,7 @@ who refuses to answer questions, you will know who he is. If this should happen,
 me. Send me word that he has come back. 
 `;
 
-export const snowWhite = `
+export const snowWhite1 = `
 Snow White and the Seven Dwarfs
 
 Once upon a time in the middle of winter, when the flakes of
@@ -2249,4 +2249,39 @@ the left, and the younger at the right, and then the pigeons
 pecked out the other eye from each.  And thus, for their
 wickedness and falsehood, they were punished with blindness
 all their days.
+`;
+export const snowWhite = `
+Snow White and the Seven Dwarfs
+
+She ran as long as her feet would go until it was almost evening,
+then she saw a little cottage and went into it to rest herself.
+Everything in the cottage was small, but neater and cleaner than
+can be told.  There was a table on which was a white cover, and
+seven little plates, and on each plate a little spoon, moreover,
+there were seven little knives and forks, and seven little mugs.
+Against the wall stood seven little beds side by side, and
+covered with snow-white counterpanes.
+
+Little snow-white was so hungry and thirsty that she ate some
+vegetables and bread from each plate and drank a drop of wine
+out of each mug, for she did not wish to take all from one only.
+Then, as she was so tired, she laid herself down on one of the
+little beds, but none of them suited her, one was too long,
+another too short, but at last she found that the seventh one was
+right, and so she remained in it, said a prayer and went to
+sleep.
+
+When it was quite dark the owners of the cottage came back.
+They were seven dwarfs who dug and delved in the mountains for
+ore.  They lit their seven candles, and as it was now light within
+the cottage they saw that someone had been there, for everything
+was not in the same order in which they had left it.
+
+The first said, who has been sitting on my chair.
+The second, who has been eating off my plate.
+The third, who has been taking some of my bread.
+The fourth, who has been eating my vegetables.
+The fifth, who has been using my fork.
+The sixth, who has been cutting with my knife.
+The seventh, who has been drinking out of my mug.
 `;

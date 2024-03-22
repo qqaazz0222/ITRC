@@ -379,7 +379,6 @@
 /* Demo Robust */
 
 #demoRobustPage {
-    position: relative;
     width: 100svw;
     min-width: 100svw;
     max-width: 100svw;
@@ -391,31 +390,400 @@
     overflow: hidden;
 }
 
-#demoRobustPage .bookShelf {
+#demoRobustPage .bookSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100svw;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+#demoRobustPage .bookSection .bookShelf {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
+    height: 100svh;
+    min-height: 100svh;
+    transition: transform 1s;
 }
-
-#demoRobustPage .coverImg {
-    width: 100%;
-    max-width: 480px;
-    user-select: none;
-}
-
-#demoRobustPage button {
-    width: 2rem;
-    height: 2rem;
-    background-color: white;
-}
-
-.pageSample {
+#demoRobustPage .bookWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    min-width: 100svw;
+    width: 100svw;
+    height: 100svh;
+}
+
+#demoRobustPage .bookWrap:nth-child(1) {
+}
+#demoRobustPage .bookWrap:nth-child(2) {
+    background-size: 100% 100%;
+}
+
+#demoRobustPage .coverImg {
+    height: 100%;
+    max-height: 480px;
+    user-select: none;
+    box-shadow: 0 1rem 2rem #00000033;
+}
+
+#demoRobustPage .controller {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#demoRobustPage .bookSection .controller {
+    bottom: 10%;
+}
+
+#demoRobustPage .questionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: relative;
+    padding: 2rem 0;
     width: 100svw;
     height: 100svh;
     min-height: 100svh;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+#demoRobustPage .questionSection .controller {
+    top: 10%;
+}
+
+#demoRobustPage .questionSection .chatWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    position: relative;
+    width: calc(100% - 2rem);
+    max-height: 65svh;
+    max-width: 960px;
+    flex: 1;
+    overflow: scroll;
+}
+
+#demoRobustPage .questionSection .chatWrap .block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-image: linear-gradient(
+        to bottom,
+        var(--background-color),
+        transparent
+    );
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-weight: 500;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.my {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.my .msg {
+    width: fit-content;
+    max-width: 60%;
+    padding: 1rem 1.5rem;
+    background-color: var(--foreground-color);
+    border-radius: 1rem;
+    color: var(--background-color);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msg {
+    width: fit-content;
+    max-width: 60%;
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: #333333;
+    opacity: 0;
+}
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msgWaiting {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    width: fit-content;
+    max-width: 60%;
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: #999;
+}
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msgWaiting .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msgWaiting .left svg {
+    animation: loading 2s linear infinite;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msgWaiting .right {
+    display: flex;
+    flex-direction: column;
+    max-height: 1.5rem;
+    overflow: hidden;
+}
+#demoRobustPage
+    .questionSection
+    .chatWrap
+    .msgWrap.ai
+    .msgWaiting
+    .right
+    .textWrap {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-3rem);
+    animation: waiting 100s infinite;
+}
+
+#demoRobustPage .questionSection .chatWrap .msgWrap.ai .msgWaiting p {
+    height: 1.5rem;
+}
+
+@keyframes waiting {
+    0% {
+        transform: translateY(1.5rem);
+    }
+    1% {
+        transform: translateY(0);
+    }
+    3% {
+        transform: translateY(0);
+    }
+    4% {
+        transform: translateY(-1.5rem);
+    }
+    7% {
+        transform: translateY(-1.5rem);
+    }
+    8% {
+        transform: translateY(-3rem);
+    }
+    10% {
+        transform: translateY(-3rem);
+    }
+    11% {
+        transform: translateY(-4.5rem);
+    }
+    13% {
+        transform: translateY(-4.5rem);
+    }
+    14% {
+        transform: translateY(-6rem);
+    }
+    30% {
+        transform: translateY(-6rem);
+    }
+    31% {
+        transform: translateY(-7.5rem);
+    }
+    100% {
+        transform: translateY(-7.5rem);
+    }
+}
+
+#demoRobustPage .questionSection .questionWrap {
+    width: calc(100% - 2rem);
+    max-width: 960px;
+}
+
+#demoRobustPage .questionSection .questionWrap .questionInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: var(--background-color);
+    transition: background-color 0.5s, border 0.5s, color 0.5s, height 0.5s;
+}
+
+#demoRobustPage .questionSection .questionWrap .questionInput textarea {
+    background-color: transparent;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 1.125rem;
+}
+
+#demoRobustPage .questionSection .questionWrap .questionInput textarea:focus {
+    border-bottom: 1px solid var(--background-color);
+}
+
+#demoRobustPage .questionSection .sampleQuestionWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#demoRobustPage .questionSection .questionWrap .questipnFuncWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#demoRobustPage .colBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.75rem 0.75rem;
+    background-color: var(--foreground-color);
+    border-radius: 4rem;
+    font-size: 1.125em;
+    color: var(--background-color);
+    transition: background-color 0.3s, border 0.3s;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+#demoRobustPage .colBtn p {
+    min-height: 2.5rem;
+    transform: translateY(0);
+    transition: transform 0.3s;
+    font-weight: 600;
+}
+
+#demoRobustPage .colBtn:hover p {
+    transform: translateY(-100%);
+}
+
+#demoRobustPage .animBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3.3125rem;
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    border: 1px solid #ffffff44;
+    border-radius: 4rem;
+    font-size: 1.125em;
+    color: #ffffff;
+    transition: background-color 0.3s, border 0.3s;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+#demoRobustPage .animBtn:hover {
+    background-color: #ffffff33;
+    border: 1px solid #ffffff66;
+}
+#demoRobustPage .animBtn p {
+    min-height: 3.3125rem;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+#demoRobustPage .animBtn:hover p {
+    transform: translateY(-100%);
+}
+
+#demoRobustPage .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3.3125rem;
+    height: 3.3125rem;
+    padding: 0.75rem 0.75rem;
+    background-color: transparent;
+    border: 1px solid #ffffff44;
+    border-radius: 4rem;
+    font-size: 1.125em;
+    color: #ffffff;
+    transition: background-color 0.3s, border 0.3s;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+#demoRobustPage .btn:hover {
+    background-color: #ffffff33;
+    border: 1px solid #ffffff66;
+}
+#demoRobustPage .btn p {
+    min-height: 3.3125rem;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+#demoRobustPage .btn:hover p {
+    transform: translateY(-3.3125rem);
+}
+
+#demoRobustPage .btnSpacer {
+    width: 3.3125rem;
+    height: 3.3125rem;
+    user-select: none;
+    cursor: none;
+}
+
+#demoRobustPage .sampleBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3rem;
+    padding: 0.75rem 1.25rem;
+    background-color: transparent;
+    border: 1px solid var(--background-color);
+    border-radius: 4rem;
+    font-size: 1em;
+    color: var(--background-color);
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+#demoRobustPage .sampleBtn:hover {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+#demoRobustPage .sampleBtn p {
+    min-height: 2.5rem;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+#demoRobustPage .sampleBtn:hover p {
+    transform: translateY(-100%);
 }

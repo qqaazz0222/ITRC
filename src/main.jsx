@@ -11,11 +11,11 @@ import DemoLayout from "./layouts/demoLayout/layout";
 import LandingPage from "./pages/landing/page";
 import ModelPage from "./pages/model/page";
 import DemoNiaPage from "./pages/demo/niaPage";
+import DemoRobustPage from "./pages/demo/robustPage";
 import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
 import "./custom.css";
-import DemoRobustPage from "./pages/demo/robustPage";
 
 const router = createBrowserRouter([
     {
