@@ -175,7 +175,11 @@ const DemoRobustPage = () => {
             setChat(temp);
         } catch (error) {
             console.log(error);
-            temp[-1].value = "오류가 발생했습니다.";
+            temp.push({
+                owner: "ai",
+                value: "오류가 발생했습니다.",
+            });
+            setChat(temp);
         }
         setIsProcess(false);
     };
@@ -209,6 +213,30 @@ const DemoRobustPage = () => {
                                 src={book.cover}
                                 alt={book.title.en}
                             />
+                            <div className="mainTypo">
+                                <motion.p
+                                    initial="offscreen"
+                                    whileInView="onscreen"
+                                    viewport={{
+                                        once: false,
+                                    }}
+                                    variants={typoVariants}
+                                >
+                                    {book.title.en}
+                                </motion.p>
+                            </div>
+                            <div className="subTypo">
+                                <motion.p
+                                    initial="offscreen"
+                                    whileInView="onscreen"
+                                    viewport={{
+                                        once: false,
+                                    }}
+                                    variants={coverVariants}
+                                >
+                                    {book.title.ko}
+                                </motion.p>
+                            </div>
                         </div>
                     ))}
                 </div>
