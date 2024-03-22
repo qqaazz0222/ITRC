@@ -146,9 +146,6 @@ const DemoNiaPage = () => {
         getVideoList();
     }, []);
     useEffect(() => {
-        console.log(videoList);
-    }, [videoList]);
-    useEffect(() => {
         videoContainerHandler(currentIdx);
     }, [currentIdx]);
     return (

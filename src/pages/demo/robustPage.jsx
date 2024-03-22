@@ -136,6 +136,15 @@ const DemoRobustPage = () => {
     const [currentIdx, setCurrentIdx] = useState(0);
     const [question, setQuestion] = useState("");
     const [chat, setChat] = useState([]);
+    const checkServer = async () => {
+        const response = await RobustqaService.serverCheck();
+        if (response) {
+            console.log("[ROBUSTQA SERVER] Server Is Working");
+        } else {
+            console.log("[ROBUSTQA SERVER ERROR] Server Is Not Working");
+            window.alert("서버에 연결할 수 없습니다.");
+        }
+    };
     const pageHandler = (type) => {
         const bookSection = document.querySelector(".bookSection");
         const questionSection = document.querySelector(".questionSection");
@@ -185,6 +194,7 @@ const DemoRobustPage = () => {
     };
     useEffect(() => {
         useTheme("black");
+        checkServer();
     }, []);
     useEffect(() => {
         initData();
