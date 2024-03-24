@@ -15,6 +15,7 @@ import DisplaySection from "./sections/displaySection/section";
 // 스타일
 import "./animation.css";
 import "./style.css";
+import CommentSection from "./sections/commentSection/section";
 
 const LandingPage = () => {
     const Themes = ["yellow", "orange", "red", "black", "white"];
@@ -85,7 +86,9 @@ const LandingPage = () => {
             >
                 <ModelSection pageOutHandler={pageOutHandler} />
             </div>
-            <div></div>
+            <div id="section4" style={{ position: "relative", zIndex: 4 }}>
+                <CommentSection />
+            </div>
         </div>
     );
 };
