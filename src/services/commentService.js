@@ -25,10 +25,28 @@ const getCommentAll = async () => {
     }
 };
 
+const createComment = async (nickname, context) => {
+    try {
+        const response = await axios.post(
+            COMMENT_SERVER_URL + "/comment/create",
+            { nickname: nickname, context: context }
+        );
+        if (response.status === 200) {
+            console.log(response);
+            return response.data[0];
+        } else {
+            console.log(`[AXIOS REQUEST ERROR] : ${response}`);
+        }
+    } catch (error) {
+        console.log(`[AXIOS ERROR] : ${error}`);
+    }
+};
+
 const CommentService = {
     url: COMMENT_SERVER_URL,
     serverCheck,
     getCommentAll,
+    createComment,
 };
 
 export default CommentService;
