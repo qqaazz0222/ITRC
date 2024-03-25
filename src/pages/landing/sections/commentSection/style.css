@@ -36,19 +36,22 @@
     width: 100%;
 }
 
-#commentSection .commentInput .inputNickname {
-    width: 100%;
-    padding: 1.5rem;
-    border: 1px solid #00000022;
-    border-radius: 0.75rem;
-    outline: none;
-}
+#commentSection .commentInput .inputNickname,
 #commentSection .commentInput .inputContext {
     width: 100%;
     padding: 1.5rem;
     border: 1px solid #00000022;
     border-radius: 0.75rem;
     outline: none;
+    transition: border 0.5s;
+}
+
+#commentSection .commentInput .inputNickname:focus,
+#commentSection .commentInput .inputContext:focus {
+    border: 1px solid #00000099;
+}
+
+#commentSection .commentInput .inputContext {
     resize: none;
 }
 
@@ -61,6 +64,11 @@
     width: 100%;
 }
 
+#commentSection .commentInput .controlWrap .hint {
+    flex: 1;
+    color: #aaa;
+    padding: 0 0.5rem;
+}
 #commentSection .commentInput .controlWrap button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -100,6 +108,12 @@
     border: 1px solid #00000022;
     border-radius: 0.75rem;
     box-shadow: 0 0.25rem 0.5rem #00000009;
+    transition: scale 0.3s, box-shadow 0.3s;
+}
+
+#commentSection .commentContainer .comment:hover {
+    scale: 1.02;
+    box-shadow: 0 0.375rem 0.625rem #00000009;
 }
 
 #commentSection .commentContainer .comment .context {
@@ -107,6 +121,7 @@
     font-size: 1rem;
     font-weight: 400;
     color: #111111;
+    user-select: none;
 }
 
 #commentSection .commentContainer .comment .infoWrap {
@@ -120,10 +135,12 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: #999999;
+    user-select: none;
 }
 
 #commentSection .commentContainer .comment .infoWrap .created {
     font-size: 0.875rem;
     font-weight: 300;
     color: #999999;
+    user-select: none;
 }

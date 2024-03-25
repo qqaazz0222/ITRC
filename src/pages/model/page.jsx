@@ -1,5 +1,5 @@
 // 라이브러리
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useOutletContext } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -9,8 +9,9 @@ import useTheme from "@/hooks/useTheme";
 // 컴포넌트
 // 아이콘
 // 이미지
+import ModelPoster from "@/assets/videos/model-poster.png";
 // 동영상
-import Model_1_1 from "@/assets/videos/video-model-1-1.mp4";
+import Model from "@/assets/videos/model.webm";
 // 스타일
 import "./style.css";
 // 데이터
@@ -40,6 +41,7 @@ const ModelPage = ({ project }) => {
     const { pageOutHandler } = useOutletContext();
     const themeHandler = useTheme;
     const data = projects[project];
+    const [videoKey, setVideoKey] = useState("pause");
 
     const videoRef = useRef(null);
     const [contentSectionRef, contentSectionInView] = useInView();
@@ -57,6 +59,7 @@ const ModelPage = ({ project }) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        setVideoKey("play");
     }, []);
 
     useEffect(() => {
@@ -72,18 +75,26 @@ const ModelPage = ({ project }) => {
     return (
         <div id="modelNiaPage" className="page modelPage">
             <div className="titleSection" ref={videoRef}>
-                <motion.video
-                    src={Model_1_1}
+                <motion.div
+                    className="videoWrap"
                     style={{
                         opacity: opacity1,
                         scale: scale1,
                         top: top1,
                     }}
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                ></motion.video>
+                >
+                    <video
+                        id="bgVideo"
+                        poster={ModelPoster}
+                        muted
+                        autoPlay
+                        loop
+                        playsInline
+                        key={videoKey}
+                    >
+                        <source src={Model} type="video/webm" />
+                    </video>
+                </motion.div>
                 <motion.div
                     className="article"
                     style={{
@@ -247,12 +258,12 @@ const ArticleContentListItem = ({ title, desc }) => {
         <motion.li
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
         >
             <motion.p
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: "all" }}
+                viewport={{ once: true, amount: "some" }}
                 variants={fadeInVariants}
             >
                 <strong>{title}</strong> : {desc}
@@ -269,7 +280,7 @@ const ArticleContentTable = ({ title, items }) => {
         <motion.li
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
             variants={fadeInVariants}
         >
             <strong>{title}</strong>
@@ -293,7 +304,7 @@ const ArticleContentImage = ({ img }) => {
         <motion.img
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
             variants={fadeInVariants}
             src={img}
         ></motion.img>

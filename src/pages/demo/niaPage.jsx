@@ -159,6 +159,8 @@ const DemoNiaPage = () => {
                             src={`${NiaService.url}/static/${video.path}`}
                             muted
                             loop
+                            controls={false}
+                            playsInline
                         />
                         <div className="article">
                             <motion.div
@@ -260,6 +262,7 @@ const DemoNiaPage = () => {
                         type="video/mp4"
                         src={`${NiaService.url}/static/${videoList[currentIdx].path}`}
                         controls
+                        playsInline
                         onClick={(e) => {
                             e.stopPropagation();
                         }}

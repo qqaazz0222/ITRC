@@ -1,14 +1,14 @@
 .pageIn {
     position: fixed;
     width: 100svw;
-    height: 100svh;
+    height: 100vh;
     z-index: 1000;
 }
 
 .pageIn.fade {
     position: fixed;
     width: 100svw;
-    height: 100svh;
+    height: 100vh;
     z-index: 1000;
     background-color: var(--dgu-red);
     animation: pagePadeIn 1s forwards;
@@ -17,13 +17,13 @@
 .pageOut {
     position: fixed;
     width: 100svw;
-    height: 100svh;
+    height: 100vh;
     z-index: 1000;
 }
 .pageIn .slide {
     position: fixed;
     width: 100svw;
-    height: 100svh;
+    height: 100vh;
     transform: translateX(0);
     animation: slideRight 0.75s forwards;
 }
@@ -34,7 +34,7 @@
 .pageOut .slide {
     position: fixed;
     width: 100svw;
-    height: 100svh;
+    height: 100vh;
     transform: translateX(100%);
     animation: slideLeft 0.75s forwards;
 }
