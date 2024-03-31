@@ -16,6 +16,7 @@ const getCommentAll = async () => {
             COMMENT_SERVER_URL + "/comment/latest/all"
         );
         if (response.status === 200) {
+            console.log(response);
             return response.data[0];
         } else {
             console.log(`[AXIOS REQUEST ERROR] : ${response}`);

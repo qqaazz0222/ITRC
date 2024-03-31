@@ -6,6 +6,8 @@
     width: 100svw;
     min-height: 100svh;
     height: fit-content;
+    /* background-image: url("@/assets/images/p120.png"); */
+    background-position: -50% -50%;
 }
 
 #modelSection .article {

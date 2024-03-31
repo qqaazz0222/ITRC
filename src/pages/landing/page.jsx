@@ -37,6 +37,7 @@ const LandingPage = () => {
     };
     const getCommentAll = async () => {
         const response = await CommentService.getCommentAll();
+        console.log("comment:", response);
         setCommentList(response);
     };
     const backgroundHandler = () => {
