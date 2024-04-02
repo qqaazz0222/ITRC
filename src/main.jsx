@@ -12,6 +12,7 @@ import LandingPage from "./pages/landing/page";
 import ModelPage from "./pages/model/page";
 import DemoNiaPage from "./pages/demo/niaPage";
 import DemoRobustPage from "./pages/demo/robustPage";
+import DemoDeepScanPage from "./pages/demo/deepScanPage";
 import ErrorPage from "./pages/error/page";
 // 스타일
 import "./index.css";
@@ -57,7 +58,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/demo/deepscan",
-                element: <></>,
+                element: <DemoDeepScanPage />,
             },
         ],
     },
