@@ -31,13 +31,13 @@ const LandingPage = () => {
     const [commentSectionRef, commentSectionInView] = useInView();
     const commentServerCheck = async () => {
         const response = await CommentService.serverCheck();
+        console.log("commentServer", response);
         if (response) {
             setCommentServerStatus(true);
         }
     };
     const getCommentAll = async () => {
         const response = await CommentService.getCommentAll();
-        console.log("comment:", response);
         setCommentList(response);
     };
     const backgroundHandler = () => {

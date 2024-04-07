@@ -9,6 +9,7 @@ import ModelLayout from "./layouts/modelLayout/layout";
 import DemoLayout from "./layouts/demoLayout/layout";
 // 페이지
 import LandingPage from "./pages/landing/page";
+import DeveloperPage from "./pages/developer/page";
 import ModelPage from "./pages/model/page";
 import DemoNiaPage from "./pages/demo/niaPage";
 import DemoRobustPage from "./pages/demo/robustPage";
@@ -59,6 +60,15 @@ const router = createBrowserRouter([
             {
                 path: "/demo/deepscan",
                 element: <DemoDeepScanPage />,
+            },
+        ],
+    },
+    {
+        element: <ModelLayout />,
+        children: [
+            {
+                path: "/about/developer",
+                element: <DeveloperPage />,
             },
         ],
     },

@@ -1,7 +1,7 @@
 // 라이브러리
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { PropTypes } from "prop-types";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 // 서비스
 import CommentService from "@/services/commentService";
 // 컴포넌트

@@ -1,0 +1,8 @@
+#developerPage {
+    width: 100svw;
+    height: 100svh;
+    background-image: url("@/assets/images/logo-outline-x1.png");
+    background-position: left bottom;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+}

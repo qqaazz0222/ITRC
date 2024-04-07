@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const COMMENT_SERVER_URL = "http://192.168.196.7:3000";
+const COMMENT_SERVER_URL = "http://210.94.194.83:5050";
 const serverCheck = async () => {
     try {
-        const response = await axios.get(COMMENT_SERVER_URL);
+        const response = await axios.get(COMMENT_SERVER_URL + "/comment");
         return response.status === 200;
     } catch (error) {
         console.log(`[AXIOS ERROR] : ${error}`);
