@@ -36,8 +36,7 @@ const WelcomeSection = () => {
                 }}
             >
                 <div className="mainTypo" ref={mainTypoRef}>
-                    <p>Ai Play</p>
-                    <p>Ground</p>
+                    <p>ITRC - KSRC</p>
                 </div>
                 <div className="subTypo">Dongguk Univ.</div>
             </motion.div>

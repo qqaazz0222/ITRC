@@ -26,7 +26,7 @@ const Header = ({ pageOutHandler }) => {
                     <path d="M9.903 2.206c-.643-.35-1.11-.032-1.037.685l.843 8.468h1.299l1.462-7.75z" />
                     <path d="M13.249 5.328c.046-.766-.162-1.374-.78-1.72l-1.461 7.75h1.073c.263 0 .515.03.753.084zM14.118 17.584a3.125 3.125 0 0 1-2.037.718h-1.736l5.197.89z" />
                 </svg>
-                <div className="logoTypo">Ai PlayGround</div>
+                <div className="logoTypo">ITRC-KSRC</div>
             </div>
             <div className="menuWrap">
                 <div
