@@ -62,7 +62,7 @@ ModelSection.propTypes = {
 };
 
 const ModelTitle = ({ title }) => {
-    return <div className="modelTitle">Project : {title}</div>;
+    return <div className="modelTitle">{title}</div>;
 };
 ModelTitle.propTypes = {
     title: PropTypes.string.isRequired,
@@ -104,10 +104,12 @@ const Model1 = ({ onClick }) => {
                 playsInline
                 autoPlay={isMobile}
             />
-            <ModelTitle title={"NIA"} />
+            <ModelTitle
+                title={"범죄 사전 예방에 중점을 둔 이상행위 탐지 모델"}
+            />
             <ModelDescription
                 desc={
-                    "NIA 모델은 주거지역 내에서 이상 행동을 실시간으로 탐지하여 범죄를 사전에 예방하는 데 중점을 둔 모델입니다."
+                    "주거지역 내에서 이상 행동을 실시간으로 탐지하여 범죄를 사전에 예방하는 데 중점을 둔 모델입니다."
                 }
             />
         </div>
@@ -147,10 +149,10 @@ const Model2 = ({ onClick }) => {
                 playsInline
                 autoPlay={isMobile}
             />
-            <ModelTitle title={"RoBustQA"} />
+            <ModelTitle title={"자동 질의응답 모델"} />
             <ModelDescription
                 desc={
-                    "RobustQA 모델은 일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 강력한 도구입니다."
+                    "일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 강력한 도구입니다."
                 }
             />
         </div>
@@ -190,10 +192,10 @@ const Model3 = ({ onClick }) => {
                 playsInline
                 autoPlay={isMobile}
             />
-            <ModelTitle title={"DeepScan"} />
+            <ModelTitle title={"딥러닝 기반 사진 검색 모델"} />
             <ModelDescription
                 desc={
-                    "DeepScan 모델은 이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 기술입니다."
+                    "이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 기술입니다."
                 }
             />
         </div>

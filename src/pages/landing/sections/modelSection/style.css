@@ -72,7 +72,7 @@
 
 #modelSection .article .modelContainer .modelWrap .modelTitle {
     font-family: "AlmarenaDisplay";
-    letter-spacing: -0.065rem;
+    letter-spacing: -0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: #4a411f;
@@ -91,6 +91,13 @@
 #modelSection .article .modelContainer .modelWrap.model1 {
     justify-content: space-between;
     grid-row: 1 / span 2;
+}
+
+#modelSection .article .modelContainer .modelWrap.model1 .modelTitle {
+    max-width: 80%;
+}
+#modelSection .article .modelContainer .modelWrap.model3 .modelTitle {
+    max-width: 70%;
 }
 #modelSection .article .modelContainer .modelWrap.model1 .modelDesc {
     width: 80%;
