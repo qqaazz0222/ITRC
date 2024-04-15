@@ -11,7 +11,17 @@ const DeveloperPage = () => {
     useEffect(() => {
         useTheme("white");
     }, []);
-    return <div id="developerPage" className="page"></div>;
+    return (
+        <div id="developerPage" className="page">
+            <div className="article">
+                <div className="group">컴퓨터 & AI 학과</div>
+                <div className="group">HRI Lab</div>
+                <div className="group">PLASS Lab</div>
+                <div className="group">CB Lab</div>
+                <div className="group">CSDC Lab</div>
+            </div>
+        </div>
+    );
 };
 
 export default DeveloperPage;

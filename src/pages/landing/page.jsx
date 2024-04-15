@@ -26,12 +26,11 @@ const LandingPage = () => {
     const { pageOutHandler } = useOutletContext();
     const themeHandler = useTheme;
     const [welcomeSectionRef, welcomeSectionInView] = useInView();
-    const [displaySectionRef, displaySectionInView] = useInView();
+    // const [displaySectionRef, displaySectionInView] = useInView();
     const [modelSectionRef, modelSectionInView] = useInView();
     const [commentSectionRef, commentSectionInView] = useInView();
     const commentServerCheck = async () => {
         const response = await CommentService.serverCheck();
-        console.log("commentServer", response);
         if (response) {
             setCommentServerStatus(true);
         }
@@ -43,20 +42,19 @@ const LandingPage = () => {
     const backgroundHandler = () => {
         const section1 = document.getElementById("section1");
         if (welcomeSectionInView) {
-            console.log("1번 섹션 보이는중");
-        }
-        if (displaySectionInView) {
-            console.log("2번 섹션 보이는중");
             section1.style.opacity = 1;
             themeHandler(currentTheme);
         }
+        // if (displaySectionInView) {
+        //     console.log("2번 섹션 보이는중");
+        // section1.style.opacity = 1;
+        //     themeHandler(currentTheme);
+        // }
         if (modelSectionInView) {
-            console.log("3번 섹션 보이는중");
-            section1.style.opacity = 0;
+            section1.style.opacity = 0.15;
             themeHandler("white");
         }
         if (commentSectionInView) {
-            console.log("4번 섹션 보이는중");
             section1.style.opacity = 0;
             themeHandler("white");
         }
@@ -70,7 +68,7 @@ const LandingPage = () => {
         backgroundHandler();
     }, [
         welcomeSectionInView,
-        displaySectionInView,
+        // displaySectionInView,
         modelSectionInView,
         commentSectionInView,
     ]);
@@ -84,7 +82,11 @@ const LandingPage = () => {
     }, [commentServerStatus]);
     return (
         <div id="landingPage" className="page">
-            <div id="section1" style={{ height: "100svh", zIndex: 1 }}>
+            <div
+                id="section1"
+                className="slideSection"
+                style={{ height: "100svh", zIndex: 1 }}
+            >
                 <div
                     style={{
                         position: "fixed",
@@ -96,7 +98,7 @@ const LandingPage = () => {
                     <WelcomeSection />
                 </div>
             </div>
-            <div
+            {/* <div
                 id="section2"
                 style={{ position: "relative", zIndex: 2 }}
                 ref={displaySectionRef}
@@ -108,9 +110,10 @@ const LandingPage = () => {
                         setCurrentTheme(theme);
                     }}
                 />
-            </div>
+            </div> */}
             <div
                 id="section3"
+                className="slideSection"
                 style={{ position: "relative", zIndex: 3 }}
                 ref={modelSectionRef}
             >
@@ -119,6 +122,7 @@ const LandingPage = () => {
             {commentServerStatus && (
                 <div
                     id="section4"
+                    className="slideSection"
                     style={{ position: "relative", zIndex: 4 }}
                     ref={commentSectionRef}
                 >

@@ -105,7 +105,7 @@ const ModelPage = ({ project }) => {
                 >
                     <div className="mainTypo">
                         <motion.p variants={fadeInVariants}>
-                            Project : {data.project}
+                            {data.project}
                         </motion.p>
                     </div>
                     <div className="subTypo">

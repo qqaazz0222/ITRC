@@ -42,7 +42,7 @@ const ModelSection = ({ pageOutHandler }) => {
                             pageOutHandler("/model/4");
                         }}
                     />
-                    <Model5
+                    {/* <Model5
                         onClick={() => {
                             pageOutHandler("/model/5");
                         }}
@@ -51,7 +51,7 @@ const ModelSection = ({ pageOutHandler }) => {
                         onClick={() => {
                             pageOutHandler("/model/6");
                         }}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
@@ -62,7 +62,15 @@ ModelSection.propTypes = {
 };
 
 const ModelTitle = ({ title }) => {
-    return <div className="modelTitle">{title}</div>;
+    return (
+        <div className="modelTitle">
+            {title.map((text, idx) => (
+                <p className="modelTitleRow" key={idx}>
+                    {text}
+                </p>
+            ))}
+        </div>
+    );
 };
 ModelTitle.propTypes = {
     title: PropTypes.string.isRequired,
@@ -105,7 +113,7 @@ const Model1 = ({ onClick }) => {
                 autoPlay={isMobile}
             />
             <ModelTitle
-                title={"범죄 사전 예방에 중점을 둔 이상행위 탐지 모델"}
+                title={["범죄 사전 예방에 중점을 둔", "이상행위 탐지 모델"]}
             />
             <ModelDescription
                 desc={
@@ -149,7 +157,7 @@ const Model2 = ({ onClick }) => {
                 playsInline
                 autoPlay={isMobile}
             />
-            <ModelTitle title={"자동 질의응답 모델"} />
+            <ModelTitle title={["자동 질의응답 모델"]} />
             <ModelDescription
                 desc={
                     "일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 강력한 도구입니다."
@@ -192,7 +200,7 @@ const Model3 = ({ onClick }) => {
                 playsInline
                 autoPlay={isMobile}
             />
-            <ModelTitle title={"딥러닝 기반 사진 검색 모델"} />
+            <ModelTitle title={["딥러닝 기반", "사진 검색 모델"]} />
             <ModelDescription
                 desc={
                     "이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 기술입니다."
@@ -209,7 +217,7 @@ Model3.propTypes = {
 const Model4 = ({ onClick }) => {
     return (
         <div className="modelWrap model4" onClick={onClick}>
-            <ModelTitle title={"Model 4"} />
+            <ModelTitle title={["Model 4"]} />
             <ModelDescription
                 desc={
                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
@@ -223,38 +231,38 @@ Model4.propTypes = {
     isMobile: PropTypes.bool.isRequired,
 };
 
-const Model5 = ({ onClick }) => {
-    return (
-        <div className="modelWrap model5" onClick={onClick}>
-            <ModelTitle title={"Model 5"} />
-            <ModelDescription
-                desc={
-                    "Use a pre-designed template or personalize with video, stickers, fonts, and more"
-                }
-            />
-        </div>
-    );
-};
-Model5.propTypes = {
-    onClick: PropTypes.func.isRequired,
-    isMobile: PropTypes.bool.isRequired,
-};
+// const Model5 = ({ onClick }) => {
+//     return (
+//         <div className="modelWrap model5" onClick={onClick}>
+//             <ModelTitle title={["Model 5"]} />
+//             <ModelDescription
+//                 desc={
+//                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
+//                 }
+//             />
+//         </div>
+//     );
+// };
+// Model5.propTypes = {
+//     onClick: PropTypes.func.isRequired,
+//     isMobile: PropTypes.bool.isRequired,
+// };
 
-const Model6 = ({ onClick }) => {
-    return (
-        <div className="modelWrap model6" onClick={onClick}>
-            <ModelTitle title={"Model 6"} />
-            <ModelDescription
-                desc={
-                    "Use a pre-designed template or personalize with video, stickers, fonts, and more"
-                }
-            />
-        </div>
-    );
-};
-Model6.propTypes = {
-    onClick: PropTypes.func.isRequired,
-    isMobile: PropTypes.bool.isRequired,
-};
+// const Model6 = ({ onClick }) => {
+//     return (
+//         <div className="modelWrap model6" onClick={onClick}>
+//             <ModelTitle title={["Model 6"]} />
+//             <ModelDescription
+//                 desc={
+//                     "Use a pre-designed template or personalize with video, stickers, fonts, and more"
+//                 }
+//             />
+//         </div>
+//     );
+// };
+// Model6.propTypes = {
+//     onClick: PropTypes.func.isRequired,
+//     isMobile: PropTypes.bool.isRequired,
+// };
 
 export default ModelSection;

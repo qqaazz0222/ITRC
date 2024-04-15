@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import useTheme from "@/hooks/useTheme";
 // 서비스
+import ModuleService from "@/services/moduleService";
 import NiaService from "@/services/niaService";
 // 컴포넌트
 // 아이콘
@@ -53,7 +54,7 @@ const DemoNiaPage = () => {
     const [top5, setTop5] = useState([]);
     const [result, setResult] = useState("");
     const checkServer = async () => {
-        const response = await NiaService.serverCheck();
+        const response = await ModuleService.niaServerCheck();
         if (response) {
             console.log("[NIA SERVER] Server Is Working");
         } else {
@@ -62,12 +63,13 @@ const DemoNiaPage = () => {
         }
     };
     const getVideoList = async () => {
-        const response = await NiaService.getVideoList();
+        // const response = await NiaService.getVideoList();
+        const response = await ModuleService.niaGetVideoList();
         setVideoList(response);
     };
     const getAnalysisVideo = async (video) => {
         processHandler(true);
-        const response = await NiaService.getAnalysisVideo(video);
+        const response = await ModuleService.niaGetAnalysisVideo(video.id);
         resultPopUpHandler("open", response.data);
         processHandler(false);
     };
@@ -77,7 +79,6 @@ const DemoNiaPage = () => {
             let l = results[10].split(":")[1].split("]")[0].trim();
             let d = results[11].split(":")[1].split("[")[0].trim();
             let t = results.slice(-6, -1);
-            let t5 = [{}];
             for (let i = 0; i < 5; i++) {
                 let temp = [];
                 if (t[i].includes("m")) {
@@ -156,7 +157,7 @@ const DemoNiaPage = () => {
                         <video
                             className="backgroundVideo"
                             type="video/mp4"
-                            src={`${NiaService.url}/static/${video.path}`}
+                            src={`${ModuleService.url}/static/${video.path}`}
                             muted
                             loop
                             controls={false}
@@ -260,7 +261,7 @@ const DemoNiaPage = () => {
                 >
                     <video
                         type="video/mp4"
-                        src={`${NiaService.url}/static/${videoList[currentIdx].path}`}
+                        src={`${ModuleService.url}/static/${videoList[currentIdx].path}`}
                         controls
                         playsInline
                         onClick={(e) => {

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import useTheme from "@/hooks/useTheme";
 // 서비스
+import ModuleService from "@/services/moduleService";
 import RobustqaService from "@/services/robustqaService";
 // 컴포넌트
 // 아이콘
@@ -137,7 +138,7 @@ const DemoRobustPage = () => {
     const [question, setQuestion] = useState("");
     const [chat, setChat] = useState([]);
     const checkServer = async () => {
-        const response = await RobustqaService.serverCheck();
+        const response = await ModuleService.robustqaServerCheck();
         if (response) {
             console.log("[ROBUSTQA SERVER] Server Is Working");
         } else {
@@ -170,7 +171,7 @@ const DemoRobustPage = () => {
         let temp = [...chat, { owner: "my", value: question }];
         setChat(temp);
         initQuestion();
-        const response = await RobustqaService.postAnalysisQuestion(
+        const response = await ModuleService.robustqaPostAnalysisQuestion(
             BookData[currentIdx].text,
             question
         );

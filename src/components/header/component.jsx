@@ -5,14 +5,29 @@ import { PropTypes } from "prop-types";
 // 아이콘
 // 스타일
 import "./style.css";
+import { useEffect, useState } from "react";
 
 const Header = ({ pageOutHandler }) => {
+    const [isRoot, setIsRoot] = useState(false);
+    useEffect(() => {
+        if (window.location.pathname === "/") {
+            setIsRoot(true);
+        }
+    }, []);
     return (
         <div id="header">
             <div
                 className="logoWrap"
                 onClick={() => {
-                    pageOutHandler("/");
+                    if (isRoot) {
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                        });
+                    } else {
+                        pageOutHandler("/");
+                    }
                 }}
             >
                 <svg className="logo" viewBox="0 0 28.030001 26.309999">
@@ -48,7 +63,7 @@ const Header = ({ pageOutHandler }) => {
                 <div
                     className="menu btn"
                     onClick={() => {
-                        location.href = "#section3";
+                        location.href = "/#section3";
                     }}
                 >
                     Try

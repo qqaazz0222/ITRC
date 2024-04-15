@@ -103,17 +103,18 @@ strong {
 .modelPage .titleSection .mainTypo {
     margin-bottom: 1rem;
     font-size: 6rem;
-    font-family: "AlmarenaDisplay";
-    font-weight: 400;
+    font-family: "GangwonState";
     color: #ffffff;
     line-height: 6rem;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: -0.01rem;
     z-index: 100;
     user-select: none;
     animation: fadeInUp 2s 1s forwards;
     opacity: 0;
+}
+
+.modelPage .titleSection .mainTypo p {
+    font-family: "GangwonState";
 }
 .modelPage .titleSection .subTypo {
     margin-bottom: 1rem;

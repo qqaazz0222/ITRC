@@ -5,7 +5,7 @@ import Model_DeepScan_Structure from "@/assets/images/deepscan.png";
 
 // Project : NIA
 const niaData = {
-    project: "NIA",
+    project: "이상행위 탐지 모델",
     desc: "Abnormal Behavior Detection",
     tags: ["이상행위감지", "징후감지", "범죄감지"],
     demo: "/demo/nia",
@@ -140,7 +140,7 @@ const niaData = {
 
 // Project : robust
 const robustQaData = {
-    project: "RoBustQA",
+    project: "자동 질의응답 모델",
     desc: "Question & Answer",
     tags: ["질의응답", "가상비서", "검색엔진", "장문검색"],
     demo: "/demo/robustqa",
@@ -190,7 +190,7 @@ const robustQaData = {
 
 // Project : DeepScan
 const deepScanData = {
-    project: "DeepScan",
+    project: "딥러닝 기반 사진 검색 모델",
     desc: "Deeplearning Image Search",
     tags: ["딥러닝", "이미지검색", "컴퓨터비전", "OCR"],
     demo: "/demo/deepscan",
