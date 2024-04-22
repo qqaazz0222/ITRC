@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Wanted Sans Variable";
+    font-family: "Pretendard Variable";
     font-style: normal;
-    src: url("./assets/fonts/WantedSansVariable.woff2")
+    src: url("./assets/fonts/PretendardVariable.woff2")
         format("woff2-variations");
 }
 @font-face {
@@ -59,23 +59,50 @@
     font-weight: 700;
     font-style: normal;
 }
-/* @font-face {
-    font-family: "TitleKo";
-    src: url("./assets/fonts/Title-Ko-Regular.oft") format("opentype");
+@font-face {
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-Regular.woff2") format("woff2");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: "TitleKo";
-    src: url("./assets/fonts/Title-Ko-Bold.oft") format("opentype");
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-Medium.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-SemiBold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-Bold.woff2") format("woff2");
     font-display: swap;
     font-weight: 700;
     font-style: normal;
-} */
-
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-ExtraBold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("./assets/fonts/Pretendard-Black.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
 * {
-    font-family: "Wanted Sans Variable";
+    font-family: "Pretendard";
 }
 .w-responsive-sign {
     width: 460px;

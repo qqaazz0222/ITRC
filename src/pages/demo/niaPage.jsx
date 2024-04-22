@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import useTheme from "@/hooks/useTheme";
 // 서비스
 import ModuleService from "@/services/moduleService";
-import NiaService from "@/services/niaService";
 // 컴포넌트
 // 아이콘
 import {
@@ -15,6 +14,10 @@ import {
     X,
     Loader,
 } from "lucide-react";
+// 이미지
+import Poster1 from "@/assets/images/poster1.jpg";
+import Poster2 from "@/assets/images/poster2.jpg";
+import Poster3 from "@/assets/images/poster3.jpg";
 // 스타일
 import "./style.css";
 
@@ -53,6 +56,7 @@ const DemoNiaPage = () => {
     const [detected, setDetected] = useState("");
     const [top5, setTop5] = useState([]);
     const [result, setResult] = useState("");
+    const posterArr = [Poster1, Poster2, Poster3];
     const checkServer = async () => {
         const response = await ModuleService.niaServerCheck();
         if (response) {
@@ -161,6 +165,7 @@ const DemoNiaPage = () => {
                             muted
                             loop
                             controls={false}
+                            poster={posterArr[idx]}
                             playsInline
                         />
                         <div className="article">
@@ -173,7 +178,7 @@ const DemoNiaPage = () => {
                                 }}
                                 variants={typoVariants}
                             >
-                                Test Video #{idx + 1}
+                                Video #{idx + 1}
                             </motion.div>
                             <div className="funcWrap">
                                 <motion.button

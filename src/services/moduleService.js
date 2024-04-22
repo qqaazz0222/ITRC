@@ -51,6 +51,15 @@ const robustqaPostAnalysisQuestion = async (context, question) => {
     }
 };
 
+const deepscanServerCheck = async () => {
+    try {
+        const response = await axios.get(SERVER_URL + "/deepscan");
+        return response.status === 200;
+    } catch (error) {
+        console.log(`[AXIOS ERROR] : ${error}`);
+    }
+};
+
 const ModuleService = {
     url: SERVER_URL,
     niaServerCheck,
@@ -58,6 +67,7 @@ const ModuleService = {
     niaGetAnalysisVideo,
     robustqaServerCheck,
     robustqaPostAnalysisQuestion,
+    deepscanServerCheck,
 };
 
 export default ModuleService;

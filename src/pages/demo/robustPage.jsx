@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import useTheme from "@/hooks/useTheme";
 // 서비스
 import ModuleService from "@/services/moduleService";
-import RobustqaService from "@/services/robustqaService";
 // 컴포넌트
 // 아이콘
 import {
@@ -23,6 +22,7 @@ import {
     rapunzel,
     snowWhite,
 } from "./text";
+import { littlePrinceSamples } from "./sample";
 // 이미지
 import CoverLittlePrince from "@/assets/images/littlePrince.jpg";
 import CoverSnowWhite from "@/assets/images/snowWhite.jpg";
@@ -84,10 +84,10 @@ const BookData = [
         questions: [
             "What did the adults think the child’s drawing looked like?",
             "What is the pilot asked to draw by the little prince?",
-            "The pilot gives the little prince something and which he keeps it in his pocket. What is it? ",
             "What does the discoverer of the little prince’s planet do in order to be taken seriously? ",
             "How many times in one day does the sun set on the little prince’s planet? ",
         ],
+        samples: littlePrinceSamples,
     },
     {
         title: {
@@ -135,6 +135,7 @@ const DemoRobustPage = () => {
     const textAreaRef = useRef();
     const [isProcess, setIsProcess] = useState(false);
     const [currentIdx, setCurrentIdx] = useState(0);
+    const [origin, setOrigin] = useState("");
     const [question, setQuestion] = useState("");
     const [chat, setChat] = useState([]);
     const checkServer = async () => {
@@ -172,7 +173,7 @@ const DemoRobustPage = () => {
         setChat(temp);
         initQuestion();
         const response = await ModuleService.robustqaPostAnalysisQuestion(
-            BookData[currentIdx].text,
+            origin !== "" ? origin : BookData[currentIdx].text,
             question
         );
         try {
@@ -183,6 +184,7 @@ const DemoRobustPage = () => {
                 value: answer[answer.length - 2].split("=")[1].trim(),
             });
             setChat(temp);
+            setOrigin("");
         } catch (error) {
             console.log(error);
             temp.push({
@@ -371,6 +373,14 @@ const DemoRobustPage = () => {
                                                 textAreaRef.current.value =
                                                     question;
                                                 setQuestion(question);
+                                                console.log(
+                                                    BookData[currentIdx]
+                                                        .samples[idx]
+                                                );
+                                                setOrigin(
+                                                    BookData[currentIdx]
+                                                        .samples[idx]
+                                                );
                                             }}
                                         >
                                             <p>샘플 #{idx + 1}</p>

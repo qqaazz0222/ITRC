@@ -1,11 +1,11 @@
 // 라이브러리
+import { useEffect, useState } from "react";
 import { PropTypes } from "prop-types";
 // 서비스
 // 컴포넌트
 // 아이콘
 // 스타일
 import "./style.css";
-import { useEffect, useState } from "react";
 
 const Header = ({ pageOutHandler }) => {
     const [isRoot, setIsRoot] = useState(false);
@@ -44,7 +44,7 @@ const Header = ({ pageOutHandler }) => {
                 <div className="logoTypo">ITRC-KSRC</div>
             </div>
             <div className="menuWrap">
-                <div
+                {/* <div
                     className="menu link"
                     onClick={() => {
                         pageOutHandler("/about/project");
@@ -59,7 +59,7 @@ const Header = ({ pageOutHandler }) => {
                     }}
                 >
                     Developer
-                </div>
+                </div> */}
                 <div
                     className="menu btn"
                     onClick={() => {

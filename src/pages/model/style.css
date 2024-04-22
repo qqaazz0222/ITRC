@@ -103,7 +103,7 @@ strong {
 .modelPage .titleSection .mainTypo {
     margin-bottom: 1rem;
     font-size: 6rem;
-    font-family: "GangwonState";
+    font-weight: 700;
     color: #ffffff;
     line-height: 6rem;
     text-align: center;
@@ -113,9 +113,6 @@ strong {
     opacity: 0;
 }
 
-.modelPage .titleSection .mainTypo p {
-    font-family: "GangwonState";
-}
 .modelPage .titleSection .subTypo {
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -332,8 +329,7 @@ strong {
     .modelPage .titleSection .article .mainTypo {
         margin-bottom: 0.5rem;
         font-size: 3rem;
-        font-family: "AlmarenaDisplay";
-        font-weight: 400;
+        font-weight: 700;
         color: #ffffff;
         line-height: 2.5rem;
         text-align: center;

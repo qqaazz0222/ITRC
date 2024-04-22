@@ -62,13 +62,29 @@ ModelSection.propTypes = {
 };
 
 const ModelTitle = ({ title }) => {
+    const [isMobile, setIsMobile] = useState(false);
+    const checkMobile = () => {
+        const w = window.innerWidth;
+        if (w < 767) {
+            setIsMobile(true);
+        }
+    };
+    useEffect(() => {
+        checkMobile();
+    }, []);
     return (
         <div className="modelTitle">
-            {title.map((text, idx) => (
-                <p className="modelTitleRow" key={idx}>
-                    {text}
-                </p>
-            ))}
+            {isMobile ? (
+                <p className="modelTitleRow">{title.join(" ")}</p>
+            ) : (
+                <>
+                    {title.map((text, idx) => (
+                        <p className="modelTitleRow" key={idx}>
+                            {text}
+                        </p>
+                    ))}
+                </>
+            )}
         </div>
     );
 };
@@ -160,7 +176,7 @@ const Model2 = ({ onClick }) => {
             <ModelTitle title={["자동 질의응답 모델"]} />
             <ModelDescription
                 desc={
-                    "일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 강력한 도구입니다."
+                    "일상생활에서 사용자가 직면하는 다양한 정보의 필요에 신속하고 정확하게 대응할 수 있는 모델입니다."
                 }
             />
         </div>
@@ -203,7 +219,7 @@ const Model3 = ({ onClick }) => {
             <ModelTitle title={["딥러닝 기반", "사진 검색 모델"]} />
             <ModelDescription
                 desc={
-                    "이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 기술입니다."
+                    "이미지의 시각적 특징과 패턴을 분석하여 유사한 이미지를 찾거나 관련 정보를 추출하는 모델입니다."
                 }
             />
         </div>

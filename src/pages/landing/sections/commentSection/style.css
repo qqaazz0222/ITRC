@@ -206,6 +206,11 @@
 }
 
 @media (max-width: 639px) {
+    #commentSection .article .mainTypo {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+
     #commentSection .commentContainer {
         gap: 0.5rem;
         grid-template-columns: repeat(1, 1fr);
@@ -217,5 +222,13 @@
     #commentSection .commentContainer .commentInput .iconWrap {
         width: 2rem;
         height: 2rem;
+    }
+    #commentSection .commentContainer .comment {
+        min-height: fit-content;
+    }
+    #commentSection .commentContainer .comment .header .nickname,
+    #commentSection .commentContainer .comment .header .date,
+    #commentSection .commentContainer .comment .context {
+        font-size: 0.875rem;
     }
 }
