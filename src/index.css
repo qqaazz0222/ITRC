@@ -5,8 +5,12 @@
 /* black */
 @layer base {
     :root {
+        /* 전역 변수 */
         --background: #ffffff;
         --forground: #000000;
+        --max-width: 80rem;
+        --radius: 1rem;
+        /* 텍스트 색상 */
         --text-0: #ffffff;
         --text-1: #f9f9f9;
         --text-2: #dcdcdc;
@@ -17,24 +21,37 @@
         --text-7: #4d4c4c;
         --text-8: #313030;
         --text-9: #131212;
+        --text-orange: #ff7a00;
+        /* 택스트 굵기 */
+        --font-weight-thin: 150;
+        --font-weight-extralight: 250;
+        --font-weight-light: 350;
+        --font-weight-reguler: 450;
+        --font-weight-medium: 550;
+        --font-weight-semibold: 650;
+        --font-weight-bold: 750;
+        --font-weight-extrabold: 850;
+        --font-weight-black: 900;
+        /* 색상 */
         --col-white: #ffffff;
         --col-black: #131212;
         --col-orange: #ff7a00;
         --col-orange-1: #ff7b0066;
         --col-orange-0: #ff7b0000;
         --grid-gutter: 1.25rem;
-
+        /* 카드 색상 */
         --card-text: #131212;
         --card-background: #f3f3f3;
         --card-background-inverse: #323232;
         --card-stroke: #eeedeb;
         --card-radius: 1rem;
-
+        /* 푸터 색상 */
         --footer-text: #9d9d9d;
         --footer-foreground: #232323;
         --footer-background: #15151a;
-        --max-width: 80rem;
-        --radius: 1rem;
+        /* 그림자 */
+        --shadow: 0 0 0.75rem 0 #eeeeee;
+        --shadow-active: 0 0.25rem 1rem 0 #dfdfdf;
     }
 }
 
@@ -74,15 +91,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 8rem 0;
     width: 100%;
-    height: 20rem;
     gap: 1.5rem;
     user-select: none;
 }
 
 .pageInfo > .pageName {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--text-8);
 }
 
@@ -91,6 +108,33 @@
     text-align: center;
     font-size: 2.75rem;
     line-height: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    color: var(--text-8);
+}
+
+.pageInfo > .pageSlogan > .description {
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-light);
+    color: var(--text-5);
+}
+
+.pageInfo > .linkBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--col-white);
+    border: 1px solid var(--card-stroke);
+    font-size: 1rem;
+    font-weight: var(--font-weight-reguler);
+    color: var(--text-5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pageInfo > .linkBtn:hover {
+    background-color: var(--card-background);
     color: var(--text-8);
 }

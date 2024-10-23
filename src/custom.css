@@ -7,8 +7,16 @@
         format("woff2-variations");
 }
 
+@font-face {
+    font-family: "Pretendard Variable";
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url("./woff2/PretendardVariable.woff2") format("woff2-variations");
+}
+
 * {
-    font-family: "Wanted Sans Variable" !important;
+    font-family: "Pretendard Variable" !important;
 }
 
 .w-responsive-sign {

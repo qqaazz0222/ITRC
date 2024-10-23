@@ -16,6 +16,7 @@
 
 #HomePage > .heroSection > .artWallWrap {
     flex: 10;
+    box-shadow: var(--shadow);
 }
 
 #HomePage > .heroSection > .summaryWrap {
@@ -45,11 +46,13 @@
     overflow: hidden;
     cursor: pointer;
     user-select: none;
+    box-shadow: var(--shadow);
 }
 
 #HomePage .bentoItem:hover,
 #HomePage .summaryItem:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
+    box-shadow: var(--shadow-active);
 }
 
 #HomePage .bentoItem > .bentoTitle {
@@ -57,7 +60,7 @@
     top: 1.25rem;
     left: 1.25rem;
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
 }
 
 #HomePage .bentoItem > .bentoName {
@@ -65,14 +68,14 @@
     bottom: 1.25rem;
     left: 1.25rem;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 #HomePage .summaryItem > .summaryName {
     position: absolute;
     bottom: 1rem;
     left: 1.25rem;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 
 #HomePage .summaryItem > .summaryValue {
@@ -80,7 +83,7 @@
     top: 1rem;
     left: 1.25rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
 }
 
 #HomePage .bentoItem > .bentoLinkBtn,
@@ -300,7 +303,7 @@
     display: flex;
     flex-direction: column;
     padding: 0.75rem;
-    gap: 0.75rem;
+    gap: 0.5rem;
     background-color: var(--col-white);
 }
 
@@ -323,12 +326,12 @@
     color: var(--col-white);
 }
 #HomePage > .bentoWrap > .time .dateWrap > .timeDay {
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     font-size: 1.25rem;
     line-height: 1.25rem;
 }
 #HomePage > .bentoWrap > .time .dateWrap > .timeDate {
-    font-weight: 600;
+    font-weight: var(--font-weight-medium);
     font-size: 1.75rem;
     line-height: 1.75rem;
 }
@@ -346,7 +349,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     font-size: 2.75rem;
     border: 3px solid var(--card-stroke);
     border-radius: 0.675rem;
@@ -390,6 +393,7 @@
     border: 1px solid var(--card-stroke);
     border-radius: var(--card-radius);
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 #HomePage > .contactWrap > .artWall > img {
@@ -431,6 +435,7 @@
     border: 1px solid var(--card-stroke);
     border-radius: var(--card-radius);
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 #HomePage > .contactWrap > .contactFormWrap > .inputForm {
@@ -451,6 +456,17 @@
 
 #HomePage > .contactWrap > .contactFormWrap > .inputForm > .row:last-child {
     flex: 1;
+}
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .inputForm
+    > .row
+    > .contactInput
+    > p {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-8);
 }
 #HomePage
     > .contactWrap
@@ -505,7 +521,7 @@
     height: 4rem;
     background-color: var(--col-black);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     color: var(--text-0);
 }
 
@@ -588,7 +604,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 0.5rem 1.25rem;
+    padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--card-stroke);
 }
 
@@ -596,7 +612,7 @@
     width: 100%;
     height: 2.75rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     color: var(--text-8);
     text-overflow: ellipsis;
     overflow: hidden;
@@ -612,15 +628,15 @@
 }
 #HomePage .newsWrap > .newsItem > .newsInfo {
     font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--text-4);
+    font-weight: var(--font-weight-reguler);
+    color: var(--text-6);
 }
 
 #HomePage .newsWrap > .updateInfo {
     width: 100%;
-    height: 6.25rem;
-    padding: 0.75rem 1.25rem;
+    height: 5.75rem;
+    padding: 0.5rem 1.25rem;
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-reguler);
     color: var(--text-4);
 }

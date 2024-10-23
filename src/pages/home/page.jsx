@@ -81,7 +81,7 @@ const HomePage = () => {
                         alt=""
                         srcset=""
                     />
-                    <BentoTitle text="ITRC-KSCS" />
+                    <BentoTitle text="ITRC-KSRC" />
                     <BentoName text="프로젝트 소개" />
                     <BentoLinkBtn>
                         <Arrow />

@@ -33,7 +33,7 @@
     align-items: center;
     padding: 1rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     color: var(--col-black);
     cursor: pointer;
     user-select: none;
