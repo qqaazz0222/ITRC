@@ -1,0 +1,71 @@
+#Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 4rem;
+    max-height: 4rem;
+}
+
+#Header > .logoWrap {
+    height: 1.75rem;
+    cursor: pointer;
+}
+
+#Header > .logoWrap > img {
+    height: 100%;
+    user-select: none;
+}
+
+#Header > .navWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#Header > .navWrap > .navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--col-black);
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+#Header > .navWrap > .navItem:hover {
+    color: var(--col-orange);
+}
+
+#Header > .navWrap > .navItem > .underline {
+    width: 0%;
+    border-bottom: 2px solid var(--col-orange);
+    transition: 0.3s;
+}
+#Header > .navWrap > .navItem:hover > .underline {
+    width: 100%;
+}
+
+#Header > .funcWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#Header > .funcWrap > .funcItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    user-select: none;
+}

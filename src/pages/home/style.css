@@ -1,0 +1,544 @@
+#HomePage {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+#HomePage > .heroSection {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    width: 100%;
+    height: 41.25rem;
+}
+
+#HomePage > .heroSection > .artWallWrap {
+    flex: 10;
+}
+
+#HomePage > .heroSection > .summaryWrap {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#HomePage > .bentoWrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 1.25rem;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+#HomePage .bentoItem,
+#HomePage .summaryItem {
+    position: relative;
+    background-color: var(--card-background);
+    background-size: 100%;
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    transform: scale(1);
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+}
+
+#HomePage .bentoItem:hover,
+#HomePage .summaryItem:hover {
+    transform: scale(1.05);
+}
+
+#HomePage .bentoItem > .bentoTitle {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+#HomePage .bentoItem > .bentoName {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#HomePage .summaryItem > .summaryName {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+#HomePage .summaryItem > .summaryValue {
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#HomePage .bentoItem > .bentoLinkBtn,
+#HomePage .summaryItem > .summaryLinkBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+#HomePage .bentoItem > .bentoLinkBtn > .iconWrap,
+#HomePage .summaryItem > .summaryLinkBtn > .iconWrap {
+    transition: 0.5s;
+}
+#HomePage .bentoItem:hover > .bentoLinkBtn > .iconWrap.arrow,
+#HomePage .summaryItem:hover > .summaryLinkBtn > .iconWrap.arrow {
+    transform: rotate(-45deg);
+}
+#HomePage .bentoItem:hover > .bentoLinkBtn > .iconWrap.plus,
+#HomePage .summaryItem:hover > .summaryLinkBtn > .iconWrap.plus {
+    transform: rotate(90deg);
+}
+
+#HomePage .bentoItem.light > .bentoTitle,
+#HomePage .bentoItem.light > .bentoName,
+#HomePage .summaryItem.light > .summaryName,
+#HomePage .summaryItem.light > .summaryValue {
+    color: var(--col-black);
+}
+
+#HomePage .bentoItem.dark > .bentoTitle,
+#HomePage .bentoItem.dark > .bentoName,
+#HomePage .summaryItem.dark > .summaryName,
+#HomePage .summaryItem.dark > .summaryValue {
+    color: var(--col-white);
+}
+#HomePage .bentoItem.light > .bentoLinkBtn,
+#HomePage .summaryItem.light > .summaryLinkBtn {
+    background-color: var(--col-black);
+    color: var(--col-white);
+}
+
+#HomePage .bentoItem.dark > .bentoLinkBtn,
+#HomePage .summaryItem.dark > .summaryLinkBtn {
+    background-color: var(--col-white);
+    color: var(--col-black);
+}
+
+#HomePage > .heroSection > .summaryWrap > .available {
+    flex: 2;
+    background: var(--col-white)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) 0%,
+            var(--col-orange-0) 25%,
+            var(--col-orange-0) 75%,
+            var(--col-orange-1) 100%
+        );
+}
+
+#HomePage > .heroSection > .summaryWrap > .available > .icon {
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 25%;
+}
+
+#HomePage > .heroSection > .summaryWrap > .studying {
+    flex: 2;
+    background: var(--col-white)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) 0%,
+            var(--col-orange-0) 25%,
+            var(--col-orange-0) 75%,
+            var(--col-orange-1) 100%
+        );
+}
+#HomePage > .heroSection > .summaryWrap > .studying > .icon {
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    left: 25%;
+}
+#HomePage > .heroSection > .summaryWrap > .today {
+    flex: 1;
+    background: var(--col-white)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) -10%,
+            var(--col-orange-0) 15%,
+            var(--col-orange-0) 85%,
+            var(--col-orange-1) 110%
+        );
+}
+#HomePage > .heroSection > .summaryWrap > .today > .icon {
+    position: absolute;
+    width: 45%;
+    top: 0%;
+    left: 52.5%;
+}
+#HomePage > .heroSection > .summaryWrap > .cumulative {
+    flex: 1;
+    background: var(--col-white)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) -10%,
+            var(--col-orange-0) 15%,
+            var(--col-orange-0) 85%,
+            var(--col-orange-1) 110%
+        );
+}
+#HomePage > .heroSection > .summaryWrap > .cumulative > .icon {
+    position: absolute;
+    width: 60%;
+    top: 12.5%;
+    left: 50%;
+}
+#HomePage > .bentoWrap > .introduction {
+    background: var(--col-white)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) 0%,
+            var(--col-orange-0) 25%,
+            var(--col-orange-0) 75%,
+            var(--col-orange-1) 100%
+        );
+    grid-column: span 3;
+    grid-row: span 8;
+}
+#HomePage > .bentoWrap > .introduction > .icon {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+#HomePage > .bentoWrap > .notice {
+    grid-column: span 4;
+    grid-row: span 8;
+}
+#HomePage > .bentoWrap > .map {
+    background-image: url("@/assets/images/mapBg.png");
+    background-position: center;
+    background-size: 100%;
+    grid-column: span 2;
+    grid-row: span 8;
+}
+#HomePage > .bentoWrap > .communication {
+    background-color: var(--col-orange);
+    grid-column: span 3;
+    grid-row: span 5;
+}
+
+#HomePage > .bentoWrap > .communication > .bentoName {
+    color: var(--col-white) !important;
+}
+
+#HomePage > .bentoWrap > .communication > .icon {
+    position: absolute;
+    top: -30%;
+    left: 10%;
+}
+#HomePage > .bentoWrap > .news {
+    grid-column: span 3;
+    grid-row: span 14;
+}
+#HomePage > .bentoWrap > .repository {
+    background: var(--card-background-inverse)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) 0%,
+            var(--col-orange-0) 25%,
+            var(--col-orange-0) 75%,
+            var(--col-orange-1) 100%
+        );
+    grid-column: span 3;
+    grid-row: span 4;
+}
+#HomePage > .bentoWrap > .repository > .icon {
+    position: absolute;
+    width: 70%;
+    top: -10%;
+    left: 30%;
+}
+#HomePage > .bentoWrap > .model {
+    background-image: url("@/assets/images/modelBg.png");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 6;
+    grid-row: span 11;
+}
+#HomePage > .bentoWrap > .api {
+    background-color: var(--col-white);
+    background: linear-gradient(
+        -45deg,
+        var(--col-orange-1) 0%,
+        var(--col-orange-0) 25%,
+        var(--col-orange-0) 75%,
+        var(--col-orange-1) 100%
+    );
+    grid-column: span 3;
+    grid-row: span 12;
+}
+#HomePage > .bentoWrap > .api > .icon {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+#HomePage > .bentoWrap > .time {
+    grid-column: span 2;
+    grid-row: span 5;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    gap: 0.75rem;
+    background-color: var(--col-white);
+}
+
+#HomePage > .bentoWrap > .time > .row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.625rem;
+}
+
+#HomePage > .bentoWrap > .time .dateWrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: var(--col-orange);
+    border-radius: 0.675rem;
+    color: var(--col-white);
+}
+#HomePage > .bentoWrap > .time .dateWrap > .timeDay {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+#HomePage > .bentoWrap > .time .dateWrap > .timeDate {
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+}
+#HomePage > .bentoWrap > .time .logoWrap {
+    flex: 1;
+}
+#HomePage > .bentoWrap > .time .logoWrap svg {
+    width: 100%;
+    height: 100%;
+}
+
+#HomePage > .bentoWrap > .time .timeWrap {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2.75rem;
+    border: 3px solid var(--card-stroke);
+    border-radius: 0.675rem;
+}
+#HomePage > .bentoWrap > .lab {
+    grid-column: span 5;
+    grid-row: span 5;
+}
+#HomePage > .bentoWrap > .server {
+    background: var(--card-background-inverse)
+        linear-gradient(
+            -45deg,
+            var(--col-orange-1) 0%,
+            var(--col-orange-0) 25%,
+            var(--col-orange-0) 75%,
+            var(--col-orange-1) 100%
+        );
+    grid-column: span 2;
+    grid-row: span 5;
+}
+
+#HomePage > .bentoWrap > .server > .icon {
+    position: absolute;
+    width: 75%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#HomePage > .contactWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    width: 100%;
+    height: 30rem;
+}
+
+#HomePage > .contactWrap > .artWall {
+    position: relative;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+#HomePage > .contactWrap > .artWall > img {
+    position: absolute;
+    top: center;
+    left: 0;
+    min-width: 65.75rem;
+    width: 65.75rem;
+    height: 100%;
+    object-fit: contain;
+}
+
+#HomePage > .contactWrap > .artWall > img:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+#HomePage > .contactWrap > .artWall:hover > img:nth-child(2) {
+    opacity: 1;
+}
+
+#HomePage > .contactWrap > .artWall:nth-child(1) > img {
+    left: -8rem;
+}
+#HomePage > .contactWrap > .artWall:nth-child(2) > img {
+    left: -28rem;
+}
+
+#HomePage > .contactWrap > .artWall:nth-child(1) {
+    flex: 3;
+}
+#HomePage > .contactWrap > .artWall:nth-child(2) {
+    flex: 5;
+}
+#HomePage > .contactWrap > .contactFormWrap {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+#HomePage > .contactWrap > .contactFormWrap > .inputForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.875rem;
+    width: calc(100% - 3.75rem);
+}
+
+#HomePage > .contactWrap > .contactFormWrap > .inputForm > .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+#HomePage > .contactWrap > .contactFormWrap > .inputForm > .row:last-child {
+    flex: 1;
+}
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .inputForm
+    > .row:last-child
+    > .contactInput
+    > textarea {
+    flex: 1;
+}
+
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .inputForm
+    > .row
+    > .contactInput {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .inputForm
+    > .row
+    > .contactInput
+    > input,
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .inputForm
+    > .row
+    > .contactInput
+    > textarea {
+    padding: 0.25rem;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--col-black);
+    font-weight: 300;
+    color: var(--text-8);
+}
+#HomePage > .contactWrap > .contactFormWrap > .submitBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--col-black);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-0);
+}
+
+#HomePage > .contactWrap > .contactFormWrap > .submitBtn > .sendWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--col-white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .submitBtn
+    > .sendWrap
+    > .iconArray {
+    position: absolute;
+    left: -1.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    transition: 0.3s;
+}
+#HomePage
+    > .contactWrap
+    > .contactFormWrap
+    > .submitBtn:hover
+    > .sendWrap
+    > .iconArray {
+    left: 0.375rem;
+}
