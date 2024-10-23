@@ -6,6 +6,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/rootLayout/layout";
 // 페이지
 import HomePage from "./pages/home/page";
+import IntroductionPage from "./pages/introduction/page";
+import StoryPage from "./pages/story/page";
+import TechAndServicePage from "./pages/techandservice/page";
+import NewsPage from "./pages/news/page";
+import CommunicationPage from "./pages/communication/page";
 // 스타일
 import "./index.css";
 import "./custom.css";
@@ -17,6 +22,26 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <HomePage />,
+            },
+            {
+                path: "/introduction",
+                element: <IntroductionPage />,
+            },
+            {
+                path: "/story",
+                element: <StoryPage />,
+            },
+            {
+                path: "/techandservice",
+                element: <TechAndServicePage />,
+            },
+            {
+                path: "/news",
+                element: <NewsPage />,
+            },
+            {
+                path: "/communication",
+                element: <CommunicationPage />,
             },
         ],
     },
