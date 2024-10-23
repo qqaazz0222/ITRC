@@ -16,10 +16,13 @@ import { Arrow, Plus, Send, DguLogo } from "@/assets/svg/localIcon";
 // 이미지
 import DguColorBg from "@/assets/images/dguColorBg.png";
 import DguDimBg from "@/assets/images/dguDimBg.png";
+import PlassLogo from "@/assets/images/plassLogo.png";
+import HriLogo from "@/assets/images/hriLogo.png";
+import CsdcLogo from "@/assets/images/csdcLogo.png";
+
 // 스타일
 import "./style.css";
 import { setTime } from "../../../node_modules/@internationalized/date/src/manipulation";
-import { set } from "../../../node_modules/@internationalized/date/src/manipulation";
 
 const HomePage = () => {
     return (
@@ -104,6 +107,8 @@ const HomePage = () => {
                     </BentoLinkBtn>
                 </div>
                 <div className="bentoItem light news ">
+                    <News />
+                    <BentoName text="뉴스" />
                     <BentoLinkBtn>
                         <Plus />
                     </BentoLinkBtn>
@@ -130,6 +135,7 @@ const HomePage = () => {
                 </div>
                 <TimeBento />
                 <div className="bentoItem lab">
+                    <LabSlider />
                     <BentoName text="참여 연구실" />
                 </div>
                 <div className="bentoItem dark server ">
@@ -297,6 +303,45 @@ const TimeBento = () => {
                     <p className="timeTime">{time}</p>
                 </div>
             </div>
+        </div>
+    );
+};
+
+const LabSlider = () => {
+    return (
+        <div className="labSlider">
+            <img src={PlassLogo} alt="" />
+            <img src={HriLogo} alt="" />
+            <img src={CsdcLogo} alt="" />
+        </div>
+    );
+};
+
+const News = () => {
+    return (
+        <div className="newsWrap">
+            <NewsItem />
+            <NewsItem />
+            <NewsItem />
+            <NewsItem />
+            <NewsItem />
+            <div className="updateInfo">
+                최종 갱신 : 2024년 12월 12일 00시 00분
+            </div>
+        </div>
+    );
+};
+
+const NewsItem = ({
+    title = "뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목뉴스 제목",
+    publisher = "출판사",
+    created = "1시간전",
+}) => {
+    const [timeGap, setTimeGap] = useState("");
+    return (
+        <div className="newsItem">
+            <div className="newsTitle">{title}</div>
+            <div className="newsInfo">{publisher + " · " + timeGap}</div>
         </div>
     );
 };
