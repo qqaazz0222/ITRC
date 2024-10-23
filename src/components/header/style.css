@@ -12,11 +12,13 @@
 #Header > .logoWrap {
     height: 1.75rem;
     cursor: pointer;
+    user-select: none;
+    opacity: 1;
+    transition: 0.3s;
 }
 
-#Header > .logoWrap > img {
-    height: 100%;
-    user-select: none;
+#Header > .logoWrap:hover {
+    opacity: 0.6;
 }
 
 #Header > .navWrap {
@@ -68,4 +70,10 @@
     width: 2rem;
     height: 2rem;
     user-select: none;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#Header > .funcWrap > .funcItem:hover {
+    opacity: 0.6;
 }

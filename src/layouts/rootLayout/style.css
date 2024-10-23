@@ -1,6 +1,6 @@
 #RootLayout {
     display: flex;
-    width: 100svw;
+    width: calc(100svw - 2.5rem);
     min-width: var(--max-width);
     flex-direction: column;
     gap: 1.25rem;

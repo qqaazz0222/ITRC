@@ -36,8 +36,9 @@
         --col-white: #ffffff;
         --col-black: #131212;
         --col-orange: #ff7a00;
-        --col-orange-1: #ff7b0066;
         --col-orange-0: #ff7b0000;
+        --col-orange-1: #ff7b0066;
+        --col-orange-2: #ff7b0010;
         --grid-gutter: 1.25rem;
         /* 카드 색상 */
         --card-text: #131212;

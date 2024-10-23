@@ -22,7 +22,6 @@ import CsdcLogo from "@/assets/images/csdcLogo.png";
 
 // 스타일
 import "./style.css";
-import { setTime } from "../../../node_modules/@internationalized/date/src/manipulation";
 
 const HomePage = () => {
     return (
