@@ -10,18 +10,22 @@
         --forground: #000000;
         --max-width: 80rem;
         --radius: 1rem;
-        /* 텍스트 색상 */
-        --text-0: #ffffff;
-        --text-1: #f9f9f9;
-        --text-2: #dcdcdc;
-        --text-3: #c0c0c0;
-        --text-4: #a2a2a2;
-        --text-5: #858585;
-        --text-6: #686868;
-        --text-7: #4d4c4c;
-        --text-8: #313030;
-        --text-9: #131212;
-        --text-orange: #ff7a00;
+        --dimmed: #00000066;
+        /* 색상 */
+        --col-0: #ffffff;
+        --col-1: #f9f9f9;
+        --col-2: #dcdcdc;
+        --col-3: #c0c0c0;
+        --col-4: #a2a2a2;
+        --col-5: #858585;
+        --col-6: #686868;
+        --col-7: #4d4c4c;
+        --col-8: #313030;
+        --col-9: #131212;
+        --col-orange: #ff7a00;
+        --col-orange-0: #ff7b0000;
+        --col-orange-1: #ff7b0066;
+        --col-orange-2: #ff7b0010;
         /* 택스트 굵기 */
         --font-weight-thin: 150;
         --font-weight-extralight: 250;
@@ -32,13 +36,7 @@
         --font-weight-bold: 750;
         --font-weight-extrabold: 850;
         --font-weight-black: 900;
-        /* 색상 */
-        --col-white: #ffffff;
-        --col-black: #131212;
-        --col-orange: #ff7a00;
-        --col-orange-0: #ff7b0000;
-        --col-orange-1: #ff7b0066;
-        --col-orange-2: #ff7b0010;
+        /* 그리드 */
         --grid-gutter: 1.25rem;
         /* 카드 색상 */
         --card-text: #131212;
@@ -92,7 +90,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8rem 0;
+    padding: 4rem 0;
     width: 100%;
     gap: 1.5rem;
     user-select: none;
@@ -101,7 +99,7 @@
 .pageInfo > .pageName {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--text-8);
+    color: var(--col-8);
 }
 
 .pageInfo > .pageSlogan {
@@ -110,14 +108,14 @@
     font-size: 2.75rem;
     line-height: 3.5rem;
     font-weight: 800;
-    color: var(--text-8);
+    color: var(--col-8);
 }
 
 .pageInfo > .pageSlogan > .description {
     line-height: 1.25rem;
     font-size: 1.25rem;
     font-weight: var(--font-weight-light);
-    color: var(--text-5);
+    color: var(--col-5);
 }
 
 .pageInfo > .linkBtn {
@@ -126,16 +124,103 @@
     justify-content: center;
     gap: 0.25rem;
     padding: 0.5rem 0.75rem;
-    background-color: var(--col-white);
+    background-color: var(--col-0);
     border: 1px solid var(--card-stroke);
     font-size: 1rem;
     font-weight: var(--font-weight-reguler);
-    color: var(--text-5);
+    color: var(--col-5);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .pageInfo > .linkBtn:hover {
     background-color: var(--card-background);
-    color: var(--text-8);
+    color: var(--col-8);
+}
+
+.article h1 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--col-9);
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--col-8);
+}
+
+.article h3 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--col-7);
+}
+
+.article p {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--col-6);
+}
+
+.article ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.article strong {
+    font-weight: var(--font-weight-medium);
+    color: var(--col-orange);
+}
+
+.article table {
+    table-layout: fixed;
+    border-top: 2px solid var(--col-9);
+    border-bottom: 2px solid var(--col-9);
+}
+.article table tr {
+    border-bottom: 1px solid var(--col-9);
+}
+
+.article table tr th {
+    width: 16%;
+    min-width: max-content;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--col-8);
+    padding: 1rem;
+}
+
+.article table tr td {
+    color: var(--col-8);
+    padding: 1rem;
+}
+
+.article .callout {
+    padding: 1.5rem 2rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.btn {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--col-9);
+    border: 1px solid var(--col-9);
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--col-0);
+    scale: 1;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--col-8);
+    scale: 1.025;
+}
+.btn:active {
+    background-color: var(--col-0);
+    color: var(--col-9);
+    scale: 0.975;
 }

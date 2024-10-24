@@ -1,0 +1,31 @@
+#Banner {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+#Banner > .slogan {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--col-9);
+}
+#Banner > .description {
+    position: absolute;
+    top: 4.75rem;
+    left: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--col-7);
+}
+#Banner > .funcBtn {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}

@@ -2,9 +2,182 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    width: 100%;
+    max-width: var(--max-width);
 }
 
-#NewsPage > .newsContainer {
+#NewsPage > .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
     width: 100%;
-    height: 100svh;
+}
+
+#NewsPage > .article > .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+#NewsPage > .article > .newsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem > .imgWrap {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem > .imgWrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem > .imgWrap > .dimmed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dimmed);
+    color: var(--col-0);
+    object-fit: cover;
+    backdrop-filter: blur(0.25rem);
+    opacity: 0;
+    transition: 0.3s;
+}
+#NewsPage > .article > .newsGrid > .newsItem:hover > .imgWrap > .dimmed {
+    opacity: 1;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem > .textWrap > .title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--col-8);
+    transition: 0.3s;
+}
+
+#NewsPage > .article > .newsGrid > .newsItem:hover > .textWrap > .title {
+    color: var(--col-orange);
+}
+#NewsPage > .article > .newsGrid > .newsItem > .textWrap > .content {
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--col-5);
+}
+#NewsPage > .article > .newsGrid > .newsItem > .textWrap > .info {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--col-5);
+}
+
+#NewsPage #NewsSlider {
+    position: relative;
+    width: 100%;
+}
+#NewsSlider .newsSlider {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-stroke);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+}
+
+#NewsSlider .newsSlider > .newsSlideWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#NewsSlider > .slideController {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--col-0);
+    border: 1px solid var(--card-stroke);
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    color: var(--col-9);
+    scale: 1;
+    transition: 0.3s;
+}
+
+#NewsSlider .newsSlider > .slideController:hover {
+    scale: 1.025;
+    box-shadow: var(--shadow-active);
+}
+
+#NewsSlider > .slideController:active {
+    scale: 0.95;
+    background-color: var(--col-9);
+    color: var(--col-0);
+}
+
+#NewsSlider > .slideController.prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#NewsSlider > .slideController.next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+#NewsSlider .newsSlider > .newsSlideWrap > .newsSlide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#NewsSlider .newsSlider > .newsSlideWrap > .newsSlide > img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#NewsSlider .newsSlider > .newsSlideWrap > .newsSlide > .textWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 50%;
+    height: 100%;
+    background-color: var(--col-0);
 }

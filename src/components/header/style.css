@@ -36,7 +36,7 @@
     padding: 1rem;
     font-size: 1rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--col-black);
+    color: var(--col-9);
     cursor: pointer;
     user-select: none;
     transition: 0.3s;
