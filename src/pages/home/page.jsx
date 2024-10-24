@@ -1,5 +1,6 @@
 // 라이브러리
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 // 서비스
 // 컴포넌트
 import Block from "@/components/block/component";
@@ -25,7 +26,7 @@ import CsdcLogo from "@/assets/images/csdcLogo.png";
 import "./style.css";
 
 const HomePage = () => {
-    useEffect(() => {}, []);
+    const navigate = useNavigate();
     return (
         <div id="HomePage" className="page">
             <div className="heroSection">
@@ -75,7 +76,12 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="bentoWrap">
-                <div className="bentoItem light introduction ">
+                <div
+                    className="bentoItem light introduction "
+                    onClick={() => {
+                        navigate("/introduction");
+                    }}
+                >
                     <img
                         className="icon"
                         src={IntroductionBg}
@@ -88,14 +94,24 @@ const HomePage = () => {
                         <Arrow />
                     </BentoLinkBtn>
                 </div>
-                <div className="bentoItem light notice ">
-                    <BentoName text="프로젝트 소식" />
+                <div
+                    className="bentoItem light notice"
+                    onClick={() => {
+                        navigate("/story");
+                    }}
+                >
+                    <BentoName text="프로젝트 이야기" />
                     <BentoLinkBtn>
                         <Plus />
                     </BentoLinkBtn>
                 </div>
                 <div className="bentoItem map"></div>
-                <div className="bentoItem light communication ">
+                <div
+                    className="bentoItem light communication"
+                    onClick={() => {
+                        navigate("/communication");
+                    }}
+                >
                     <img
                         className="icon"
                         src={CommunicationBg}
@@ -107,21 +123,38 @@ const HomePage = () => {
                         <Arrow />
                     </BentoLinkBtn>
                 </div>
-                <div className="bentoItem light news ">
+                <div
+                    className="bentoItem light news"
+                    onClick={() => {
+                        navigate("/news");
+                    }}
+                >
                     <News />
                     <BentoName text="뉴스" />
                     <BentoLinkBtn>
                         <Plus />
                     </BentoLinkBtn>
                 </div>
-                <div className="bentoItem dark repository ">
+                <div
+                    className="bentoItem dark repository"
+                    onClick={() => {
+                        // TBD : navigate to github repository
+                        navigate("/");
+                    }}
+                >
                     <img className="icon" src={RepositoryBg} alt="" srcset="" />
                     <BentoName text="저장소" />
                     <BentoLinkBtn theme="light">
                         <Plus color="black" />
                     </BentoLinkBtn>
                 </div>
-                <div className="bentoItem light model ">
+                <div
+                    className="bentoItem light model"
+                    onClick={() => {
+                        // TBD : navigate to model page
+                        navigate("/");
+                    }}
+                >
                     <div
                         id="BlockArea"
                         style={{ width: "100%", height: "100%" }}
@@ -131,7 +164,13 @@ const HomePage = () => {
                         <Arrow />
                     </BentoLinkBtn>
                 </div>
-                <div className="bentoItem light api ">
+                <div
+                    className="bentoItem light api"
+                    onClick={() => {
+                        // TBD : navigate to api page
+                        navigate("/");
+                    }}
+                >
                     <img className="icon" src={ApiBg} alt="" srcset="" />
                     <BentoName text="API" />
                     <BentoLinkBtn>
@@ -143,7 +182,13 @@ const HomePage = () => {
                     <LabSlider />
                     <BentoName text="참여 연구실" />
                 </div>
-                <div className="bentoItem dark server ">
+                <div
+                    className="bentoItem dark server"
+                    onClick={() => {
+                        // TBD : navigate to server state page
+                        navigate("/");
+                    }}
+                >
                     <img className="icon" src={ServerBg} alt="" srcset="" />
                     <BentoName text="서버" />
                     <BentoLinkBtn theme="light">
