@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 // 서비스
 // 컴포넌트
+import Block from "@/components/block/component";
 // 아이콘
 import AvailableBg from "@/assets/images/availableBg.png";
 import StudyingBg from "@/assets/images/studyingBg.png";
@@ -24,10 +25,11 @@ import CsdcLogo from "@/assets/images/csdcLogo.png";
 import "./style.css";
 
 const HomePage = () => {
+    useEffect(() => {}, []);
     return (
         <div id="HomePage" className="page">
             <div className="heroSection">
-                <div className="artWallWrap card"></div>
+                <div className="artWallWrap card">{/* <Block /> */}</div>
                 <div className="summaryWrap">
                     <div className="summaryItem light available ">
                         <img
@@ -120,6 +122,10 @@ const HomePage = () => {
                     </BentoLinkBtn>
                 </div>
                 <div className="bentoItem light model ">
+                    <div
+                        id="BlockArea"
+                        style={{ width: "100%", height: "100%" }}
+                    ></div>
                     <BentoName text="인공지능 모델" />
                     <BentoLinkBtn>
                         <Arrow />

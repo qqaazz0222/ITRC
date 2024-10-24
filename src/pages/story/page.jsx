@@ -37,7 +37,6 @@ const StoryPage = () => {
     );
 };
 
-// #TODO
 const StoryItem = ({ side, year, month, title, images = [] }) => {
     return (
         <div className={`storyItem ${side}`}>
